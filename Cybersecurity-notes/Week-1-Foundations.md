@@ -1,6 +1,6 @@
 🔐 Cybersecurity Basics (Day 1–2)
 
-📌 What is Cybersecurity?
+- What is Cybersecurity?
 
 Cybersecurity is the practice of protecting:
 
@@ -10,7 +10,7 @@ Cybersecurity is the practice of protecting:
 * Applications
 * People
 
-💡 Simple Memory Trick:
+- Simple Memory Trick:
 
 Cybersecurity = Digital Bodyguard for your life
 
@@ -22,7 +22,7 @@ Cybersecurity = Digital Bodyguard for your life
 * Integrity → Data must not be altered
 * Availability → Systems must always be accessible
 
-💡 Memory Trick (JJK Style):
+- Memory Trick (JJK Style):
 
 CIA = “Protect → Keep Pure → Always Available”
 
@@ -53,9 +53,9 @@ Vulnerability --> System
 7. SOC (Security Operations Center)
 8. Digital Forensics
 
-💡 Memory Trick:
+- Memory Trick:
 
-“NACI CEID” → (Naa-Cee-Keed 😂)
+NAIC - EISD
 
 ⸻
 
@@ -73,13 +73,13 @@ No permission = Crime
 
 ⸻
 
-🧠 Types of Hackers
+- Types of Hackers
 
 * White Hat → Good (legal)
 * Black Hat → Bad (illegal)
 * Grey Hat → In between
 
-💡 Memory Trick:
+- Memory Trick:
 
 White = Hero
 Black = Villain
@@ -95,7 +95,7 @@ Grey = Anti-hero
 * Risk → Chance + impact of threat
 * Vulnerability → Weakness
 
-💡 Formula:
+- Formula:
 
 Risk = Threat × Vulnerability
 
@@ -115,7 +115,7 @@ Risk = Threat × Vulnerability
 * IDS → Detects attacks
 * IPS → Detects + blocks attacks
 
-💡 Trick:
+- Trick:
 
 IDS = Alarm
 IPS = Alarm + Bodyguard
@@ -136,7 +136,7 @@ IPS = Alarm + Bodyguard
 * Authentication → Who are you?
 * Authorization → What can you do?
 
-💡 Trick:
+- Trick:
 
 AuthEN = Entry
 AuthOR = Power
