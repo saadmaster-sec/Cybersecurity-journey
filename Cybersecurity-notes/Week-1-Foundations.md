@@ -30,7 +30,7 @@ CIA = “Protect → Keep Pure → Always Available”
 
 ``` mermaid
 graph TD
-C[Confidentiality] --> CIA ((CIA))
+C[Confidentiality] --> CIA((CIA))
 I[Integrity] --> CIA
 A[Availability] --> CIA
 ```
