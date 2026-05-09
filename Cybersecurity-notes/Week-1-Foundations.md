@@ -34,6 +34,12 @@ C[Confidentiality] --> CIA
 I[Integrity] --> CIA
 A[Availability] --> CIA
 ```
+``` mermaid
+flowchart LR
+Attacker --> Exploit
+Exploit --> Vulnerability
+Vulnerability --> System
+```
 ⸻
 
 🌐 Cybersecurity Domains
