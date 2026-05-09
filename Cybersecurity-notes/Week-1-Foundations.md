@@ -1,4 +1,4 @@
-🔐 Cybersecurity Basics (Day 1–2)
+🔐 Cybersecurity Basics
 
 -- What is Cybersecurity?
 
@@ -308,6 +308,7 @@ Example:
 SIEM - Security command center
 
 EDR - Security guard on each computer
+
 
 🌐 Types of Cybersecurity Domains
 
