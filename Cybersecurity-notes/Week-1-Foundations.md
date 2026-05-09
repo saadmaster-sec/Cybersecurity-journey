@@ -28,6 +28,12 @@ CIA = “Protect → Keep Pure → Always Available”
 
 ⚠️ If ANY of these break → Security Incident
 
+''' mermaid
+graph TD
+C[Confidentiality] --> CIA
+I[Integrity] --> CIA
+A[Availability] --> CIA
+
 ⸻
 
 🌐 Cybersecurity Domains
