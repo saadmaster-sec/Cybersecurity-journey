@@ -1,6 +1,6 @@
 🔐 Cybersecurity Basics (Day 1–2)
 
-- What is Cybersecurity?
+-- What is Cybersecurity?
 
 Cybersecurity is the practice of protecting:
 
