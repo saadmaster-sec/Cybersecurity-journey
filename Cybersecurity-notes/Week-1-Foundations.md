@@ -428,7 +428,20 @@ Used For
 * Cybercrime analysis
 * Court evidence
 
-Ethical Hacking
+```mermaid
+mindmap
+  root((Cybersecurity Domains))
+Network Security
+Application Security
+Information Security
+Cloud Security
+Endpoint Security
+IoT Security
+SOC
+Digital Forensics
+```
+
+-- Ethical Hacking
 
 Ethical hacking is the legal use of hacking techniques to identify vulnerabilities before attackers exploit them.
 
@@ -457,7 +470,7 @@ Ethical hacking without permission is illegal.
 
 ⸻
 
-🎩 Types of Hackers
+-- Types of Hackers
 
 ⚪ White Hat Hacker
 
@@ -484,6 +497,17 @@ Company hires hacker for penetration testing.
 * Between white & black hat
 * May hack without permission
 * Usually not harmful
+
+```mermaid
+graph LR
+WhiteHat[White Hat]
+GreyHat[Grey Hat]
+BlackHat[Black Hat]
+
+WhiteHat --> Legal
+GreyHat --> Neutral
+BlackHat --> Illegal
+```
 
 Types of Networks in VirtualBox
 
@@ -533,6 +557,18 @@ Web servers, SSH servers.
 Best For
 
 Cybersecurity labs & malware testing.
+
+```mermaid
+graph TD
+  Internet --> NAT
+  Internet --> NATNetwork
+  NATNetwork --> VM1
+  NATNetwork --> VM2
+
+  Router --> BridgedVM
+
+  Host --> HostOnlyVM
+```
 
 ⚔️ Common Types of Attacks
 
@@ -666,5 +702,19 @@ Prevention
 
 * Parameterized queries
 * Input sanitization
+
+```mermaid
+mindmap
+  root((Cyber Attacks))
+  Phishing
+  MITM
+  Malware
+  Ransomware
+  Brute Force
+  Dictonary Attack
+  DoS
+  DDoS
+  SQL Injection
+```
 
 
