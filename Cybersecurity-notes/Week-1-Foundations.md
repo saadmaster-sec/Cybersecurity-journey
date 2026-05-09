@@ -431,14 +431,14 @@ Used For
 ```mermaid
 mindmap
   root((Cybersecurity Domains))
-Network Security
-Application Security
-Information Security
-Cloud Security
-Endpoint Security
-IoT Security
-SOC
-Digital Forensics
+    Network Security
+    Application Security
+    Information Security
+    Cloud Security
+    Endpoint Security
+    IoT Security
+    SOC
+    Digital Forensics
 ```
 
 -- Ethical Hacking
@@ -706,15 +706,15 @@ Prevention
 ```mermaid
 mindmap
   root((Cyber Attacks))
-  Phishing
-  MITM
-  Malware
-  Ransomware
-  Brute Force
-  Dictonary Attack
-  DoS
-  DDoS
-  SQL Injection
+    Phishing
+    MITM
+    Malware
+    Ransomware
+    Brute Force
+    Dictonary Attack
+    DoS
+    DDoS
+    SQL Injection
 ```
 
 
