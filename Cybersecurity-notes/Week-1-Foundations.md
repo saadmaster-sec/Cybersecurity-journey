@@ -170,6 +170,7 @@ AuthOR = Power
 * Insider Threat → Internal risk
 
 -- (EXTRA NOTE)
+
 📌 IP Address
 
 An IP address is like your home address on the internet.
