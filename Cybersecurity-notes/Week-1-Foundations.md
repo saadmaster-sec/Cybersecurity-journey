@@ -169,7 +169,7 @@ AuthOR = Power
 * Eavesdropping → Listening secretly
 * Insider Threat → Internal risk
 
-- (EXTRA NOTE)
+-- (EXTRA NOTE)
 📌 IP Address
 
 An IP address is like your home address on the internet.
