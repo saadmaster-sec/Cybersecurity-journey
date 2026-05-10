@@ -524,6 +524,12 @@ Best For
 
 Basic internet usage.
 
+```mermaid
+graph LR
+  Internet --> HostPC
+  HostPC --> NATVM[VM behind NAT]
+```
+
 ⸻
 
 2️⃣ NAT Network
@@ -534,6 +540,15 @@ Basic internet usage.
 Best For
 
 Labs with multiple VMs.
+
+```mermaid
+graph TD
+  Internet --> NATGateway[NAT Gateway]
+
+  NATGateway --> VM1
+  NATGateway --> VM2
+  NATGateway --> VM3
+```
 
 ⸻
 
@@ -548,6 +563,13 @@ Web servers, SSH servers.
 
 ⚠️ More exposed to attacks.
 
+```mermaid
+graph LR
+  Router --> VM[Virtual Machine]
+  Router --> Laptop
+  Router --> Phone
+```
+
 ⸻
 
 4️⃣ Host-Only Adapter
@@ -559,6 +581,18 @@ Best For
 
 Cybersecurity labs & malware testing.
 
+```mermaid
+flowchart TD
+
+    NAT["NAT<br>Internet only"] --> NATVM[Single VM]
+
+    NATNET["NAT Network<br>VM to VM + Internet"] --> VM1
+    NATNET --> VM2
+
+    BRIDGE["Bridged Adapter<br>Real LAN Access"] --> LAN[Router/LAN]
+
+    HOSTONLY["Host-Only<br>Isolated Lab"] --> HOSTVM[Private VM Network]
+```
 ```mermaid
 graph TD
   Internet --> NAT
