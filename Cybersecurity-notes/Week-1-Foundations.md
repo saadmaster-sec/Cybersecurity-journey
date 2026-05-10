@@ -593,17 +593,6 @@ flowchart TD
 
     HOSTONLY["Host-Only<br>Isolated Lab"] --> HOSTVM[Private VM Network]
 ```
-```mermaid
-graph TD
-  Internet --> NAT
-  Internet --> NATNetwork
-  NATNetwork --> VM1
-  NATNetwork --> VM2
-
-  Router --> BridgedVM
-
-  Host --> HostOnlyVM
-```
 
 ⚔️ Common Types of Attacks
 
