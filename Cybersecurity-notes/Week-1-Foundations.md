@@ -22,7 +22,7 @@ Cybersecurity = Digital Bodyguard for your life
 * Integrity → Data must not be altered
 * Availability → Systems must always be accessible
 
--- Memory Trick (JJK Style):
+-- Memory Trick:
 
 CIA = “Protect → Keep Pure → Always Available”
 
@@ -260,11 +260,11 @@ Collect logs and attack details.
 
 🏢 Popular EDR Tools
 
-* CrowdStrike Falcon￼
-* Microsoft Defender for Endpoint￼
-* SentinelOne￼
-* VMware Carbon Black￼
-* Sophos Intercept X￼
+* CrowdStrike Falcon
+* Microsoft Defender for Endpoint
+* SentinelOne
+* VMware Carbon Black
+* Sophos Intercept X
 
 ⸻
 
