@@ -15,7 +15,7 @@
 
 -- Common Cyber Attacks
 
-🔐 Cybersecurity Basics
+### 🔐 Cybersecurity Basics
 
 -- What is Cybersecurity?
 
@@ -33,7 +33,7 @@ Cybersecurity = Digital Bodyguard for your life
 
 ⸻
 
-🧱 The CIA Triad (Core Foundation)
+### 🧱 The CIA Triad (Core Foundation)
 
 * Confidentiality → Only authorized people can access data
 * Integrity → Data must not be altered
@@ -59,7 +59,7 @@ Vulnerability --> System
 ```
 ⸻
 
-🌐 Cybersecurity Domains
+### 🌐 Cybersecurity Domains
 
 1. Network Security
 2. Application Security
@@ -76,7 +76,7 @@ NAIC - EISD
 
 ⸻
 
-🧑‍💻 Ethical Hacking
+### 🧑‍💻 Ethical Hacking
 
 Ethical hacking = legal hacking to find weaknesses
 
@@ -90,21 +90,7 @@ No permission = Crime
 
 ⸻
 
--- Types of Hackers
-
-* White Hat → Good (legal)
-* Black Hat → Bad (illegal)
-* Grey Hat → In between
-
--- Memory Trick:
-
-White = Hero
-Black = Villain
-Grey = Anti-hero
-
-⸻
-
-🔑 Key Cybersecurity Terminology (A–Z)
+### 🔑 Key Cybersecurity Terminology (A–Z)
 
 ⚠️ Core Threat Concepts
 
@@ -118,7 +104,7 @@ Risk = Threat × Vulnerability
 
 ⸻
 
-🦠 Malware & Attacks
+### 🦠 Malware & Attacks
 
 * Virus → Spreads by attaching to files
 * Payload → Actual harmful action
@@ -126,7 +112,7 @@ Risk = Threat × Vulnerability
 
 ⸻
 
-🛡️ Security Tools
+### 🛡️ Security Tools
 
 * Firewall → Filters traffic
 * IDS → Detects attacks
@@ -139,7 +125,7 @@ IPS = Alarm + Bodyguard
 
 ⸻
 
-🌍 Networking Basics
+### 🌍 Networking Basics
 
 * IP Address → Device identity
 * Network → Connected systems
@@ -186,7 +172,7 @@ AuthOR = Power
 * Eavesdropping → Listening secretly
 * Insider Threat → Internal risk
 
--- (EXTRA NOTE)
+### -- (EXTRA NOTE)
 
 📌 IP Address
 
@@ -328,7 +314,7 @@ SIEM - Security command center
 EDR - Security guard on each computer
 
 
-🌐 Types of Cybersecurity Domains
+### 🌐 Types of Cybersecurity Domains
 
 Cybersecurity is divided into specialized fields called domains.
 Each domain focuses on protecting different parts of digital infrastructure.
@@ -489,7 +475,7 @@ Ethical hacking without permission is illegal.
 
 ⸻
 
--- Types of Hackers
+### -- Types of Hackers
 
 ⚪ White Hat Hacker
 
@@ -528,7 +514,7 @@ GreyHat --> Neutral
 BlackHat --> Illegal
 ```
 
-Types of Networks in VirtualBox
+### Types of Networks in VirtualBox
 
 ⸻
 
