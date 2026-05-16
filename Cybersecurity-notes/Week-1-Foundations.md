@@ -1,12 +1,18 @@
 # Week 1 - Cybersecurity Foundations
 
-# Topics Covered
+## Topics Covered
 -- What is Cybersecurity?
+
 -- CIA triad
+
 -- Ethical Hacking
+
 -- Types of Hackers
+
 -- Key Terminology
+
 -- VM Networking
+
 -- Common Cyber Attacks
 
 🔐 Cybersecurity Basics
