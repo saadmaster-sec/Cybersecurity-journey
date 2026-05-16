@@ -97,22 +97,14 @@ It comes with preinstalled with many security tools
 
 ### Basic Linux Commands
 
-Command                    Purpose
-
-pwd                        show current directory
-
-ls                          list files
-
-cd                          change directory
-
-mkdir                        create folder
-
-touch                        create file
-
-clear                        clear terminal
-
-ifconfig                      show network info
-
-ip a                         display ip address
-
-ping                          Test Connectivity
+| Command | Purpose |
+|---|---|
+| pwd | show current directory |
+| ls | list files |
+| cd | change directory |
+| mkdir | create folder |
+| touch | create file |
+| clear | clear terminal |
+| ifconfig | show network info |
+| ip a | display ip address |
+| ping | Test Connectivity |
