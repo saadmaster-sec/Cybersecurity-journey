@@ -71,7 +71,7 @@ Here are the ports you’ll see most often in IT, cybersecurity, networking, and
 |9200	| TCP	| Elasticsearch |
 |27017 |	TCP |	MongoDB |
 
-Very Important Ports for Cybersecurity
+###Very Important Ports for Cybersecurity
 
 If you're learning cybersecurity or SOC analysis, focus heavily on these:
 
@@ -106,6 +106,7 @@ Networking Infrastructure
 53 = DNS
 67/68 = DHCP
 123 = NTP
+
 Quick Cybersecurity Tip
 
 Attackers commonly target:
@@ -117,86 +118,7 @@ Attackers commonly target:
 
 That’s why these ports are often monitored in SIEMs and firewalls.
 
-If you want, I can also give you:
-
-a ports cheat sheet PDF
-top 50 ports for SOC analysts
-ports with real-world attack examples
-or 
-a mnemonic trick to memorize ports fast.
-
-You can check if Google Meet is down using these methods:
-
-Official Google Status Page
-
-The best way is the official Google Workspace Status Dashboard:
-
-Google Workspace Status Dashboard
-
-Look for Google Meet
-Green = working normally
-Orange = service disruption
-Red = outage
-Crowd-Reported Outage Sites
-
-These show if many users are reporting problems:
-
-Downdetector Google Meet
-IsDown Google Meet Status
-
-If you see a big spike in reports, it’s likely a widespread outage.
-
-Quick Checks You Can Do Yourself
-
-Try these:
-
-Open Meet in incognito mode
-Switch Wi-Fi → mobile hotspot
-Try another browser
-Visit:
-Google Meet Home
-New Meeting Test
-Check if other Google services like Gmail are also failing
-Common Signs Google Meet Is Down
-“502 Bad Gateway”
-Infinite loading screen
-Can’t join meetings
-Mic/camera not connecting
-Everyone appears “unavailable”
-
-Right now, there are no major reported Google Meet outages.
-
-so i have joined my class through meets and there is an issue where i cant see the screen and can hear the audio only and theres other 5 kids joinig from different cities having the same issue
-
-If multiple students in different cities are having the same problem at the same time, the issue is most likely on the teacher’s/shared presentation side or a temporary Google Meet issue — not your laptop alone.
-
-Try these quick checks first:
-
-Refresh the Meet tab (Ctrl + R)
-Leave and rejoin the meeting
-Switch browsers:
-try Google Chrome if you’re using Edge/Firefox
-Turn off hardware acceleration:
-Chrome → Settings → System → “Use hardware acceleration when available” → Off → Relaunch
-Ask:
-“Can anyone else see the screen?”
-“Can the teacher reshare the presentation?”
-
-Common causes:
-
-Teacher accidentally stopped presenting
-Google Slides/browser crashed on presenter side
-Meet presentation bug
-Weak upload connection from the presenter
-
-If you can hear audio but only the shared screen is broken for multiple people, it strongly points to the presenter’s screen-share failing rather than your internet.
-
-You can also check if Google Meet Status shows any ongoing issue.
-
-i need explanation on port, apache and payload
-Port (Networking)
-
-A port is like a numbered door on a computer that allows different services to communicate over a network.
+###A port is like a numbered door on a computer that allows different services to communicate over a network.
 
 Your computer has:
 
