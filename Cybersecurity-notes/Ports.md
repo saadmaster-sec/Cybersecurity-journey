@@ -234,3 +234,229 @@ Concept	Analogy
 Port	Door number
 Apache	Receptionist/web server
 Payload	Package delivered inside
+
+## Protocols (Networking)
+
+A protocol is a set of rules that devices follow to communicate over a network or the internet.
+
+Think of it like:
+
+humans use languages (English, French)
+computers use protocols
+
+Without protocols, computers would not understand each other.
+
+Simple Analogy
+
+| Networking Term	| Real Life Example |
+|---|---|
+| IP Address | House address | 
+| Port	| Door number |
+| Protocol | Language/rules used | 
+| Apache	Receptionist |
+| Payload	Package/content |
+
+### Common Networking Protocols  
+
+- HTTP
+
+HyperText Transfer Protocol
+
+Used for websites.
+
+Default port:
+
+80
+
+Example: http://example.com
+
+Data is NOT encrypted.
+
+- HTTPS
+
+HTTP Secure
+
+Secure/encrypted version of HTTP.
+
+Default port:
+
+443
+
+Example: https://google.com
+
+Uses SSL/TLS encryption.
+
+- TCP
+
+Transmission Control Protocol
+
+Reliable communication protocol.
+
+Makes sure:
+
+packets arrive
+data is correct
+nothing is missing
+Used For
+websites
+logins
+file transfers
+Example
+
+When downloading a file:
+
+TCP checks all pieces arrive correctly
+
+- UDP
+
+User Datagram Protocol
+
+Faster but less reliable than TCP.
+
+No checking if packets arrive.
+
+Used For
+gaming
+streaming
+voice/video calls
+Example
+
+Google Meet audio/video often uses UDP because speed matters more than perfection.
+
+TCP vs UDP
+Feature	TCP	UDP
+Reliable	Yes	No
+Faster	No	Yes
+Error Checking	Yes	Minimal
+Used For	Web, files	Streaming, games
+DNS
+
+Domain Name System
+
+Converts website names into IP addresses.
+
+Example:
+
+google.com → 142.x.x.x
+
+Port:
+
+53
+
+Uses both TCP and UDP.
+
+DHCP
+
+Dynamic Host Configuration Protocol
+
+Automatically gives devices:
+
+IP address
+gateway
+DNS
+
+Ports:
+
+67/68
+FTP
+
+File Transfer Protocol
+
+Transfers files between systems.
+
+Ports:
+
+20/21
+
+Not secure by default.
+
+SSH
+
+Secure Shell
+
+Secure remote access to another computer.
+
+Port:
+
+22
+
+Admins use SSH to manage Linux servers remotely.
+
+SMTP
+
+Simple Mail Transfer Protocol
+
+Sends emails.
+
+Port:
+
+25
+IMAP / POP3
+
+Used for receiving emails.
+
+Protocol	Port
+POP3	110
+IMAP	143
+
+Secure versions:
+
+993 (IMAPS)
+995 (POP3S)
+SMB
+
+Server Message Block
+
+Windows file sharing protocol.
+
+Port:
+
+445
+
+Frequently targeted in cyberattacks.
+
+Important Cybersecurity Protocols
+Protocol	Why Important
+HTTP/HTTPS	Web traffic analysis
+DNS	Malware communication
+SMB	Lateral movement
+SSH	Remote administration
+RDP	Remote desktop attacks
+FTP	Weak file transfers
+How Everything Works Together
+
+When you visit a website:
+
+Browser
+   ↓
+DNS finds IP
+   ↓
+Connects to Port 443
+   ↓
+Uses HTTPS protocol
+   ↓
+Apache/Nginx web server responds
+   ↓
+Website loads
+Tools Used to Analyze Protocols
+Tool	Purpose
+Wireshark	Packet analysis
+Nmap	Port/service scanning
+tcpdump	Command-line packet capture
+Burp Suite	Web traffic testing
+Easy Way to Remember
+Web
+HTTP = 80
+HTTPS = 443
+Remote Access
+SSH = 22
+RDP = 3389
+File Transfer
+FTP = 21
+SMB = 445
+Network Basics
+DNS = 53
+DHCP = 67/68
+Email
+SMTP = 25
+IMAP = 143
