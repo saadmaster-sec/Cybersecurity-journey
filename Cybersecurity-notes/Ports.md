@@ -421,16 +421,27 @@ Important Cybersecurity Protocols
 When you visit a website:
 
 Browser
+
    ↓
+
 DNS finds IP
+
    ↓
+
 Connects to Port 443
+
    ↓
+
 Uses HTTPS protocol
+
    ↓
+
 Apache/Nginx web server responds
+
    ↓
+
 Website loads
+
 Tools Used to Analyze Protocols
 
 | Tool |	Purpose |
@@ -443,15 +454,19 @@ Tools Used to Analyze Protocols
 Web
 HTTP = 80
 HTTPS = 443
+
 Remote Access
 SSH = 22
 RDP = 3389
+
 File Transfer
 FTP = 21
 SMB = 445
+
 Network Basics
 DNS = 53
 DHCP = 67/68
+
 Email
 SMTP = 25
 IMAP = 143
