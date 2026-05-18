@@ -1,4 +1,4 @@
-##In networking, there are 65,535 ports in total for both TCP and UDP protocols.
+## In networking, there are 65,535 ports in total for both TCP and UDP protocols.
 
 They are divided into 3 main ranges:
 
@@ -10,7 +10,7 @@ Port Range	Name	Purpose
 
 49152–65535	Dynamic/Private Ports	Temporary client-side ports
 
-##Common Networking Ports
+## Common Networking Ports
 
 Here are the ports you’ll see most often in IT, cybersecurity, networking, and SOC work:
 
@@ -71,7 +71,7 @@ Here are the ports you’ll see most often in IT, cybersecurity, networking, and
 |9200	| TCP	| Elasticsearch |
 |27017 |	TCP |	MongoDB |
 
-###Very Important Ports for Cybersecurity
+### Very Important Ports for Cybersecurity
 
 If you're learning cybersecurity or SOC analysis, focus heavily on these:
 
@@ -118,7 +118,7 @@ Attackers commonly target:
 
 That’s why these ports are often monitored in SIEMs and firewalls.
 
-###A port is like a numbered door on a computer that allows different services to communicate over a network.
+### A port is like a numbered door on a computer that allows different services to communicate over a network.
 
 Your computer has:
 
@@ -132,13 +132,9 @@ Port 443 = secure websites (HTTPS)
 Port 22 = SSH remote access
 Example
 
-When you open a website:
+When you open a website: https://google.com
 
-https://google.com
-
-Your browser connects to:
-
-Google IP : Port 443
+Your browser connects to: Google IP : Port 443
 
 Because HTTPS uses port 443.
 
@@ -149,6 +145,7 @@ Port	Service
 443	HTTPS
 445	SMB
 3389	RDP
+
 Why Ports Matter in Cybersecurity
 
 Attackers scan ports to find running services:
@@ -156,14 +153,14 @@ Attackers scan ports to find running services:
 Open port 22 → SSH available
 Open port 3389 → RDP available
 
-Tools like:
+### Tools like:
 
 Nmap
 Wireshark
 
 are used to analyze ports and traffic.
 
-Apache
+## Apache
 
 Apache HTTP Server (usually just called “Apache”) is a web server software.
 
@@ -204,14 +201,10 @@ Common log locations on Linux:
 /var/log/httpd/
 Payload
 
-A payload is the actual code or data delivered during an attack or exploit.
+### A payload is the actual code or data delivered during an attack or exploit.
 
-Think of it like:
-
-the “main action” after the attack succeeds.
-Example
-
-An attacker exploits a vulnerability:
+Think of it like: the “main action” after the attack succeeds.
+Example An attacker exploits a vulnerability:
 
 Exploit → Payload Executes
 
