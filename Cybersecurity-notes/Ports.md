@@ -264,9 +264,7 @@ HyperText Transfer Protocol
 
 Used for websites.
 
-Default port:
-
-80
+Default port: 80
 
 Example: http://example.com
 
@@ -278,9 +276,7 @@ HTTP Secure
 
 Secure/encrypted version of HTTP.
 
-Default port:
-
-443
+Default port: 443
 
 Example: https://google.com
 
@@ -292,18 +288,17 @@ Transmission Control Protocol
 
 Reliable communication protocol.
 
-Makes sure:
+Makes sure: packets arrive, data is correct, nothing is missing
 
-packets arrive
-data is correct
-nothing is missing
 Used For
-websites
-logins
-file transfers
-Example
 
-When downloading a file:
+websites
+
+logins
+
+file transfers
+
+Example: When downloading a file:
 
 TCP checks all pieces arrive correctly
 
@@ -316,12 +311,14 @@ Faster but less reliable than TCP.
 No checking if packets arrive.
 
 Used For
-gaming
-streaming
-voice/video calls
-Example
 
-Google Meet audio/video often uses UDP because speed matters more than perfection.
+gaming
+
+streaming
+
+voice/video calls
+
+Example: Google Meet audio/video often uses UDP because speed matters more than perfection.
 
 ### TCP vs UDP
 | Feature |	TCP |	UDP |
