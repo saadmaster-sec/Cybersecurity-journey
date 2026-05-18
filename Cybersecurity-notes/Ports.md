@@ -253,8 +253,8 @@ Simple Analogy
 | IP Address | House address | 
 | Port	| Door number |
 | Protocol | Language/rules used | 
-| Apache	Receptionist |
-| Payload	Package/content |
+| Apache	| Receptionist |
+| Payload | Package/content |
 
 ### Common Networking Protocols  
 
@@ -323,29 +323,27 @@ Example
 
 Google Meet audio/video often uses UDP because speed matters more than perfection.
 
-TCP vs UDP
-Feature	TCP	UDP
-Reliable	Yes	No
-Faster	No	Yes
-Error Checking	Yes	Minimal
-Used For	Web, files	Streaming, games
-DNS
+### TCP vs UDP
+| Feature |	TCP |	UDP |
+|---|---|---|
+| Reliable | Yes | No |
+| Faster | No	| Yes |
+| Error Checking | Yes | Minimal |
+| Used For | Web, files	| Streaming, games |
+
+### - DNS
 
 Domain Name System
 
 Converts website names into IP addresses.
 
-Example:
+Example: google.com → 142.x.x.x
 
-google.com → 142.x.x.x
-
-Port:
-
-53
+Port: 53
 
 Uses both TCP and UDP.
 
-DHCP
+### - DHCP
 
 Dynamic Host Configuration Protocol
 
@@ -355,42 +353,35 @@ IP address
 gateway
 DNS
 
-Ports:
+Ports: 67/68
 
-67/68
-FTP
+### - FTP
 
 File Transfer Protocol
 
 Transfers files between systems.
 
-Ports:
-
-20/21
+Ports: 20/21
 
 Not secure by default.
 
-SSH
+### - SSH
 
 Secure Shell
 
 Secure remote access to another computer.
 
-Port:
-
-22
+Port: 22
 
 Admins use SSH to manage Linux servers remotely.
 
-SMTP
+### - SMTP
 
 Simple Mail Transfer Protocol
 
 Sends emails.
 
-Port:
-
-25
+Port: 25
 IMAP / POP3
 
 Used for receiving emails.
@@ -403,27 +394,29 @@ Secure versions:
 
 993 (IMAPS)
 995 (POP3S)
-SMB
+
+### - SMB
 
 Server Message Block
 
 Windows file sharing protocol.
 
-Port:
-
-445
+Port: 445
 
 Frequently targeted in cyberattacks.
 
 Important Cybersecurity Protocols
-Protocol	Why Important
-HTTP/HTTPS	Web traffic analysis
-DNS	Malware communication
-SMB	Lateral movement
-SSH	Remote administration
-RDP	Remote desktop attacks
-FTP	Weak file transfers
-How Everything Works Together
+
+| Protocol| Why Important |
+|---|---|
+| HTTP/HTTPS |	Web traffic analysis |
+| DNS	| Malware communication |
+| SMB	| Lateral movement |
+| SSH	| Remote administration |
+| RDP	| Remote desktop attacks |
+| FTP	| Weak file transfers | 
+
+#### How Everything Works Together
 
 When you visit a website:
 
@@ -439,12 +432,14 @@ Apache/Nginx web server responds
    ↓
 Website loads
 Tools Used to Analyze Protocols
-Tool	Purpose
-Wireshark	Packet analysis
-Nmap	Port/service scanning
-tcpdump	Command-line packet capture
-Burp Suite	Web traffic testing
-Easy Way to Remember
+
+| Tool |	Purpose |
+|---|---|
+| Wireshark | Packet analysis |
+| Nmap |	Port/service scanning |
+| tcpdump |	Command-line packet capture |
+| Burp Suite |	Web traffic testing |
+### - Easy Way to Remember
 Web
 HTTP = 80
 HTTPS = 443
