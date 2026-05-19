@@ -63,6 +63,12 @@ and saved as an executable file for the isolated lab environment.
 
 ![Payload Creation](Lab1-screenshots/payload-creation.png)
 
+Changed directory to var/www/html and moved the payload to this directory
+
+![var/www/html](Lab1-screenshots/var-www-html.png)
+
+![mv payload](Lab1-screenshots/mv-payload.png)
+
 ## Step 2 - Apache2 Web Server Setup
 
 Changed directory to var/www/html
@@ -100,12 +106,13 @@ Set
 
 - LPORT
 
-to match teh generated lab payload.
+to match the generated lab payload.
 
 Started the listener and waited for the reverse connection from the Windows Machine.
 
-screenshot
+![msfconsole](Lab1-screenshots/msfconsole.png)
 
+![msfconsole setup](Lab1-screenshots/msfconsole-setup.png)
 
 ## Step 4 - Post Exploitation Enumeration
 
@@ -118,7 +125,7 @@ After establishing the Meterpreter session, several commands were used to gather
 | getuid | identify targets current user context |
 | ps | list targets running processes |
 
-screenshot
+![sysinfo](Lab1-screenshots/target-sysinfo.png)
 
 ### Privilege Escalation Demonstration
 
@@ -144,4 +151,4 @@ Demonstrated log clearing concepts using:
 
 This showed how attackers may attempt to remove traces of activity from event logs.
 
-# **Discalimer: These actions were performed in an isloated educational lab environment for cybersecurity learning purposes only.**
+## **Discalimer: These actions were performed in an isloated educational lab environment for cybersecurity learning purposes only.**
