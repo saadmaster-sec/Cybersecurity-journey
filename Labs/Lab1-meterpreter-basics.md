@@ -154,4 +154,8 @@ Demonstrated log clearing concepts using:
 
 This showed how attackers may attempt to remove traces of activity from event logs.
 
+## Additional Meterpreter functionality and module capabilities were explored in the controlled lab environment for educational purposes.
+
 ## **Discalimer: These actions were performed in an isloated educational lab environment for cybersecurity learning purposes only.**
+
+
