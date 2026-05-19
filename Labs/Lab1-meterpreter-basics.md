@@ -63,11 +63,14 @@ and saved as an executable file for the isolated lab environment.
 
 ![Payload Creation](Lab1-screenshots/payload-creation.png)
 
+
 Changed directory to var/www/html and moved the payload to this directory
 
 ![var/www/html](Lab1-screenshots/var-www-html.png)
 
 ![mv payload](Lab1-screenshots/mv-payload.png)
+
+![ls var/www/html](Lab1-screenshots/mv-payload-test.png)
 
 ## Step 2 - Apache2 Web Server Setup
 
