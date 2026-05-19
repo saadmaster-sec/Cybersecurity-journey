@@ -61,7 +61,7 @@ The payload was configured with:
 
 and saved as an executable file for the isolated lab environment.
 
-Screenshot
+![Payload Creation](Lab1-screenshots/payload creation.png)
 
 ## Step 2 - Apache2 Web Server Setup
 
