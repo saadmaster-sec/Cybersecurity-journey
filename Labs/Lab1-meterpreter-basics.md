@@ -77,7 +77,9 @@ This allowed the payload file to be hosted locally through the Apache web server
 
 After that moved the payload executable file to this directory
 
-screenshot
+![Apache status](Lab1-screenshots/Apache-start.png)
+
+![Apache server](Lab1-screenshots/Apache-server.png)
 
 ## Step 3 - Configured Metasploit Listener
 
