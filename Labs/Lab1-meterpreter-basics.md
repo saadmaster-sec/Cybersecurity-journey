@@ -156,6 +156,6 @@ This showed how attackers may attempt to remove traces of activity from event lo
 
 ## Additional Meterpreter functionality and module capabilities were explored in the controlled lab environment for educational purposes.
 
-## **Discalimer: These actions were performed in an isloated educational lab environment for cybersecurity learning purposes only.**
+## ⚠️**Discalimer: These actions were performed in an isloated educational lab environment for cybersecurity learning purposes only.**
 
 
