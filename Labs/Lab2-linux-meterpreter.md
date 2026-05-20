@@ -50,7 +50,7 @@ Explanation
 | -f elf | linux executable format |
 | > test.elf | Save payload file |
 
-![Payload Creation](
+![Payload Creation](Lab2-screenshots/Payload-Create.png)
 
 ## Step 2 - Granting Execute Permission
 
@@ -64,7 +64,7 @@ chmod +x
 
 adds executable permission to the file.
 
-screen shot
+![ELF Permission](Lab2-screenshots/Granting-execute-permission.png)
 
 ## Step 3 - Executing the Payload
 
@@ -74,7 +74,7 @@ Opened a second terminal and executed the payload file.
 
 This initiated the reverse TCP connection back to the Metasploit listener.
 
-Screenshot
+![Payload execution](Lab2-screenshots/execute-payload.png)
 
 ## Step 4 - Metasploit Listener Configuration
 
@@ -123,7 +123,9 @@ These settings help:
 
   Started the listener and waited for the reverse connection.
 
-  screenshot
+![msfconsole setup](Lab2-screenshots/msfconsole.png)
+
+![Session time](Lab2-screenshots/Session-Time.png)
 
   ## Step 5 - Meterpreter Session & Enumeration
 
@@ -138,7 +140,7 @@ These settings help:
   | ps | List running processes |
   | ipconfig/ifconfig | Display network configuration |
 
-  screenshot
+![Meterpreter Session](Lab2-screenshots/Metasploit-listener.png)
 
   ## Reverse TCP Flow
 
