@@ -50,7 +50,6 @@ Explanation
 | -f elf | linux executable format |
 | > test.elf | Save payload file |
 
-![Payload Creation](Lab2-screenshots/Payload-Create.png)
 
 ## Step 2 - Granting Execute Permission
 
