@@ -11,7 +11,6 @@ The objective of this lab was to understand:
 * Basic post-exploitation enumeration techniques
 * Android virtualization using Genymotion
 
-⸻
 
 ## Lab Environment
 
@@ -21,7 +20,6 @@ Genymotion Android VM	Android Test Device
 Apache2 Web Server	File Hosting
 Metasploit Framework	Listener & Session Management
 
-⸻
 
 ### Network Diagram
 
@@ -32,7 +30,6 @@ flowchart LR
     C --> D[Meterpreter Session]
     D --> A
 ```
-⸻
 
 ## Key Concepts Learned
 
@@ -52,7 +49,6 @@ Apache2 was used to host files on the local network so that they could be downlo
 
 Meterpreter provides an interactive session that allows security professionals to perform system enumeration and gather information during authorized testing.
 
-⸻
 
 ## Lab Workflow
 
@@ -62,7 +58,6 @@ An Android APK file was prepared for use within the lab environment.
 
 Screenshot: Payload Creation
 
-⸻
 
 ## Step 2 – Apache Web Server Verification
 
@@ -75,7 +70,6 @@ Purpose:
 
 Screenshot: Apache Service Running
 
-⸻
 
 ## Step 3 – Android File Transfer
 
@@ -93,7 +87,6 @@ For this lab, the APK was transferred within the local testing environment.
 
 Screenshot: APK Download / Transfer
 
-⸻
 
 ## Step 4 – Metasploit Listener Configuration
 
@@ -108,7 +101,6 @@ Concepts covered:
 
 Screenshot: Metasploit Configuration
 
-⸻
 
 ## Step 5 – Session Establishment
 
@@ -122,7 +114,6 @@ Learning outcomes:
 
 Screenshot: Session Opened
 
-⸻
 
 Post-Exploitation Enumeration
 
@@ -137,7 +128,6 @@ Purpose:
 
 Screenshot: System Information
 
-⸻
 
 ## Skills Practiced
 
@@ -152,7 +142,6 @@ Screenshot: System Information
 * Post-Exploitation Enumeration
 * Technical Documentation
 
-⸻
 
 - Lessons Learned
 
@@ -167,7 +156,6 @@ This lab demonstrated how Android virtual devices can be used for cybersecurity 
 * Performing basic enumeration activities
 * Documenting cybersecurity lab work professionally
 
-⸻
 
 # Disclaimer
 
