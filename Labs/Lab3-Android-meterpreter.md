@@ -157,6 +157,6 @@ This lab demonstrated how Android virtual devices can be used for cybersecurity 
 * Documenting cybersecurity lab work professionally
 
 
-# Disclaimer
+# ⚠️Disclaimer
 
 This lab was performed in an isolated educational environment using virtual machines owned and controlled by the student for cybersecurity learning purposes.
