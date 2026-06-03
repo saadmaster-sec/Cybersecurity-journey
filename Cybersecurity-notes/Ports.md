@@ -258,8 +258,6 @@ Important Difference
 |---|---|
 |Exploit	| Uses vulnerability|
 |Payload	| What runs afterward|
-|Real-World | Analogy|
-|Concept	| Analogy|
 |Port	| Door number|
 |Apache	| Receptionist/web server|
 |Payload	| Package delivered inside|
