@@ -76,32 +76,48 @@ Here are the ports you’ll see most often in IT, cybersecurity, networking, and
 If you're learning cybersecurity or SOC analysis, focus heavily on these:
 
 21 → FTP
+
 22 → SSH
+
 23 → Telnet
+
 25 → SMTP
+
 53 → DNS
+
 80/443 → Web traffic
+
 135–139 → Windows networking
+
 445 → SMB
+
 3389 → RDP
+
 1433 → MSSQL
+
 3306 → MySQL
+
 5985/5986 → WinRM
+
 Easy Way to Remember
 Web
 80 = HTTP
 443 = HTTPS
+
 Remote Access
 22 = SSH
 23 = Telnet
 3389 = RDP
+
 File Transfer
 20/21 = FTP
 445 = SMB
+
 Email
 25 = SMTP
 110 = POP3
 143 = IMAP
+
 Networking Infrastructure
 53 = DNS
 67/68 = DHCP
@@ -112,8 +128,11 @@ Quick Cybersecurity Tip
 Attackers commonly target:
 
 22 (SSH brute force)
+
 3389 (RDP attacks)
+
 445 (SMB exploits)
+
 1433/3306 (database attacks)
 
 That’s why these ports are often monitored in SIEMs and firewalls.
@@ -123,13 +142,17 @@ That’s why these ports are often monitored in SIEMs and firewalls.
 Your computer has:
 
 an IP address → the house address
+
 ports → individual doors/rooms for services
 
 Example:
 
 Port 80 = website traffic (HTTP)
+
 Port 443 = secure websites (HTTPS)
+
 Port 22 = SSH remote access
+
 Example
 
 When you open a website: https://google.com
@@ -151,14 +174,12 @@ Why Ports Matter in Cybersecurity
 Attackers scan ports to find running services:
 
 Open port 22 → SSH available
+
 Open port 3389 → RDP available
 
 ### Tools like:
 
-Nmap
-Wireshark
-
-are used to analyze ports and traffic.
+Nmap & Wireshark are used to analyze ports and traffic.
 
 ## Apache
 
@@ -179,6 +200,7 @@ Apache Usually Uses
 Port	Purpose
 80	HTTP
 443	HTTPS
+
 Why Apache Is Important
 
 Many websites run on Apache:
@@ -186,6 +208,7 @@ Many websites run on Apache:
 company websites
 blogs
 web applications
+
 In Cybersecurity
 
 Apache logs are useful for:
@@ -212,12 +235,15 @@ The exploit opens the door.
 The payload does the job.
 
 Types of Payloads
-Payload Type	Purpose
-Reverse shell	Gives attacker remote access
-Meterpreter	Advanced control session
-Ransomware payload	Encrypts files
-Downloader payload	Downloads malware
-Keylogger payload	Records keystrokes
+
+|Payload Type | Purpose|
+|---|---|
+|Reverse shell	| Gives attacker remote access|
+|Meterpreter	| Advanced control session|
+|Ransomware payload |	Encrypts files|
+|Downloader payload |	Downloads malware|
+|Keylogger payload	| Records keystrokes|
+
 Example in Ethical Hacking Labs
 
 Using Metasploit Framework:
@@ -225,15 +251,18 @@ Using Metasploit Framework:
 msfvenom -p windows/meterpreter/reverse_tcp
 windows/meterpreter/reverse_tcp
 = payload type
+
 Important Difference
-Term	Meaning
-Exploit	Uses vulnerability
-Payload	What runs afterward
-Real-World Analogy
-Concept	Analogy
-Port	Door number
-Apache	Receptionist/web server
-Payload	Package delivered inside
+
+|Term | Meaning|
+|---|---|
+|Exploit	| Uses vulnerability|
+|Payload	| What runs afterward|
+|Real-World | Analogy|
+|Concept	| Analogy|
+|Port	| Door number|
+|Apache	| Receptionist/web server|
+|Payload	| Package delivered inside|
 
 ## Protocols (Networking)
 
@@ -242,6 +271,7 @@ A protocol is a set of rules that devices follow to communicate over a network o
 Think of it like:
 
 humans use languages (English, French)
+
 computers use protocols
 
 Without protocols, computers would not understand each other.
