@@ -8,9 +8,11 @@ Computers communicate on a LAN using MAC addressess, but humans (users) and appl
 
 Example:
 
+```text
 IP Address: 192.168.1.10
 
 MAC Address: 00:1A:2B:3C:4D:5E
+```
 
 If you computer wants to send data to 192.168.1.10, it first needs to discover the MAC address.
 
@@ -62,11 +64,11 @@ Giving every department the same subnet wastes many IP addresses.
 
 With VLSM
 
+```text
 IT -> /25
-
 HR -> /27
-
 Management -> /28
+```
 
 Each department receives only the number of addresses it needs.
 
@@ -149,7 +151,9 @@ This topic comes from MAC addresses
 
 Remember:
 
+```text
 MAC Address: 00:1A:2B:3C:4D:5E
+```
 
 A MAC address is 48 bits long 
 
@@ -159,7 +163,9 @@ The first 24 bits of the MAC address.
 
 Example:
 
+```text
 00:1A:2B
+```
 
 Assigned by the IEEE
 
@@ -180,7 +186,9 @@ The last 24 bits of the MAC address.
 
 Example: 
 
+```text
 3C:4D:5E
+```
 
 Assigned by the manufacturer
 
