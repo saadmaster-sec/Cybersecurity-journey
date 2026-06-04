@@ -25,8 +25,9 @@ Examples:
 
 **Simple Formula**
 
+```text
 Network = Devices + Connections + Protocols
-
+```
 **Components**
 
 1. Devices (Computers, Phones, Servers)
