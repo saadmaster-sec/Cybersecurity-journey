@@ -36,7 +36,7 @@ Network = Devices + Connections + Protocols
 
 ## Wired vs Wireless Networks
 
-**Wired Network**
+### **Wired Network**
 
 Devices communicate through physical cables.
 
@@ -59,7 +59,7 @@ Disadvantages
 * Higher setup cost
 
 
-**Wireless Network**
+### **Wireless Network**
 
 Devices communicate using radio waves.
 
@@ -166,8 +166,8 @@ Always use:
 
 LAN vs MAN vs WAN
 
-|Feature | LAN | MAN	| WAN|
-|---|---|---|
+|Feature | LAN | MAN	| WAN |
+|---|---|---|---|
 |Coverage	| Building	| City | World|
 |Speed	Fast	| Moderate	| Variable|
 |Security	| Easier | Moderate	| Hardest|
