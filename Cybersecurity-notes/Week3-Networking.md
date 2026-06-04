@@ -168,10 +168,10 @@ LAN vs MAN vs WAN
 
 |Feature | LAN | MAN	| WAN |
 |---|---|---|---|
-|Coverage	| Building	| City | World|
-|Speed	Fast	| Moderate	| Variable|
+|Coverage	| Building | City | World|
+|Speed | Fast	| Moderate | Variable|
 |Security	| Easier | Moderate	| Hardest|
-|Example	| Home Wi-Fi |	University	| Internet|
+|Example | Home Wi-Fi | University | Internet|
 
 ### Data Communication
 
