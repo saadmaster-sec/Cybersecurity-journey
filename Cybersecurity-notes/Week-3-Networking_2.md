@@ -95,6 +95,54 @@ Example:
 
 If an attacker compromises Guest Wifi, they should not automatically reach Finance systems.
 
+## Common CIDR / Subnet Mask Reference Table
+
+| CIDR | Subnet Mask | Total IPs | Usable Hosts | Typical Use |
+|--------|---------------|------------|--------------|-------------|
+| /30 | 255.255.255.252 | 4 | 2 | Router-to-Router Links |
+| /29 | 255.255.255.248 | 8 | 6 | Network Devices |
+| /28 | 255.255.255.240 | 16 | 14 | Small Teams / Management |
+| /27 | 255.255.255.224 | 32 | 30 | Small Departments |
+| /26 | 255.255.255.192 | 64 | 62 | Medium Departments |
+| /25 | 255.255.255.128 | 128 | 126 | Large Departments |
+| /24 | 255.255.255.0 | 256 | 254 | Small Office / LAN |
+| /23 | 255.255.254.0 | 512 | 510 | Large Office |
+| /22 | 255.255.252.0 | 1024 | 1022 | Large Campus |
+| /16 | 255.255.0.0 | 65,536 | 65,534 | Very Large Enterprise |
+| /8 | 255.0.0.0 | 16,777,216 | 16,777,214 | Internet-Scale Networks |
+
+### Key Pattern
+
+As the CIDR number increases:
+
+- Network size becomes smaller
+- Number of usable hosts decreases
+- IP address usage becomes more efficient
+
+### Most Common Values
+
+| CIDR | Usable Hosts |
+|--------|--------------|
+| /24 | 254 |
+| /25 | 126 |
+| /26 | 62 |
+| /27 | 30 |
+| /28 | 14 |
+| /29 | 6 |
+| /30 | 2 |
+
+### Easy Memory Trick
+
+```text
+/24 = 254 hosts
+/25 = 126 hosts
+/26 = 62 hosts
+/27 = 30 hosts
+/28 = 14 hosts
+/29 = 6 hosts
+/30 = 2 hosts
+```
+
 ## OUI vs NIC
 
 This topic comes from MAC addresses
