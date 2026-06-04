@@ -1,6 +1,6 @@
-🌐 Week 03 - Networking Fundamentals
+# 🌐 Week 03 - Networking Fundamentals
 
-Introduction
+## Introduction
 
 Networking is one of the most important foundations of cybersecurity. Nearly every cyberattack, security incident, and defensive technology involves network communication in some way.
 
@@ -12,9 +12,7 @@ Understanding how devices communicate helps security professionals:
 * Investigate incidents
 * Secure sensitive data
 
-⸻
-
-What is a Network?
+- **What is a Network?**
 
 A network is a collection of two or more devices connected together so they can communicate and share resources.
 
@@ -25,21 +23,20 @@ Examples:
 * Office network
 * The Internet
 
-Simple Formula
+**Simple Formula**
 
 Network = Devices + Connections + Protocols
 
-Components
+**Components**
 
 1. Devices (Computers, Phones, Servers)
 2. Connections (Cable or Wireless)
 3. Protocols (Rules for communication)
 
-⸻
 
-Wired vs Wireless Networks
+## Wired vs Wireless Networks
 
-Wired Network
+**Wired Network**
 
 Devices communicate through physical cables.
 
@@ -61,9 +58,8 @@ Disadvantages
 * Less mobility
 * Higher setup cost
 
-⸻
 
-Wireless Network
+**Wireless Network**
 
 Devices communicate using radio waves.
 
@@ -85,8 +81,6 @@ Disadvantages
 * Signal interference
 * Less stable
 
-⸻
-
 Why Networking Matters in Cybersecurity
 
 Most cyber attacks occur across networks.
@@ -99,15 +93,14 @@ Examples:
 * Data exfiltration
 * Remote exploitation
 
-Key Principle
+**Key Principle**
 
 You cannot defend what you do not understand.
 
-⸻
 
-Types of Networks
+## Types of Networks
 
-LAN (Local Area Network)
+### LAN (Local Area Network)
 
 A LAN covers a small geographic area.
 
@@ -127,9 +120,7 @@ Security Risk
 
 Attackers who gain LAN access can potentially target all connected devices.
 
-⸻
-
-MAN (Metropolitan Area Network)
+### MAN (Metropolitan Area Network)
 
 Connects multiple LANs across a city.
 
@@ -148,9 +139,7 @@ Security Risk
 
 Traffic should be encrypted between connected locations.
 
-⸻
-
-WAN (Wide Area Network)
+### WAN (Wide Area Network)
 
 Covers countries or the entire world.
 
@@ -174,19 +163,17 @@ Always use:
 * VPNs
 * Encryption
 
-⸻
 
 LAN vs MAN vs WAN
 
-Feature	LAN	MAN	WAN
-Coverage	Building	City	World
-Speed	Fast	Moderate	Variable
-Security	Easier	Moderate	Hardest
-Example	Home Wi-Fi	University	Internet
+|Feature | LAN | MAN	| WAN|
+|---|---|---|
+|Coverage	| Building	| City | World|
+|Speed	Fast	| Moderate	| Variable|
+|Security	| Easier | Moderate	| Hardest|
+|Example	| Home Wi-Fi |	University	| Internet|
 
-⸻
-
-Data Communication
+### Data Communication
 
 Data communication is the transfer of information between devices through a communication medium.
 
@@ -196,10 +183,10 @@ For communication to be effective:
 * Timely
 * Understandable
 
-⸻
 
-Components of Data Communication
+### Components of Data Communication
 
+```mermaid
 flowchart LR
 A[Sender] --> B[Transmission Medium]
 B --> C[Receiver]
@@ -208,10 +195,11 @@ E[Protocol]
 D --> A
 E --> A
 E --> C
+```
 
-Components
+### Components
 
-Message
+**Message**
 
 Information being transmitted.
 
@@ -222,15 +210,15 @@ Examples:
 * Audio
 * Video
 
-Sender
+**Sender**
 
 Device that sends information.
 
-Receiver
+**Receiver**
 
 Device that receives information.
 
-Transmission Medium
+**Transmission Medium**
 
 Path used for communication.
 
@@ -240,7 +228,7 @@ Examples:
 * Fiber Optic
 * Wi-Fi
 
-Protocol
+## Protocol
 
 Rules that govern communication.
 
@@ -250,11 +238,10 @@ Examples:
 * UDP
 * HTTP
 
-⸻
 
-Types of Data Communication
+### Types of Data Communication
 
-Simplex
+**Simplex**
 
 One-way communication.
 
@@ -263,9 +250,7 @@ Examples:
 * Television Broadcast
 * Keyboard → Computer
 
-⸻
-
-Half-Duplex
+**Half-Duplex**
 
 Two-way communication but not simultaneously.
 
@@ -273,9 +258,7 @@ Examples:
 
 * Walkie-Talkie
 
-⸻
-
-Full-Duplex
+**Full-Duplex**
 
 Two-way communication simultaneously.
 
@@ -284,6 +267,7 @@ Examples:
 * Phone Call
 * Video Call
 
+```mermaid
 flowchart TD
 A[Simplex]
 A --> B[One Direction Only]
@@ -291,32 +275,31 @@ C[Half Duplex]
 C --> D[Both Directions<br>Not Simultaneous]
 E[Full Duplex]
 E --> F[Both Directions<br>Simultaneously]
+```
 
-⸻
-
-Network Topologies
+## Network Topologies
 
 Network topology describes how devices are connected and how data flows between them.
 
-Physical Topology
+**Physical Topology**
 
 Actual physical layout of devices and cables.
 
-Logical Topology
+**Logical Topology**
 
 How data flows through the network.
 
-⸻
-
-Bus Topology
+### Bus Topology
 
 All devices share one backbone cable.
 
+```mermaid
 graph LR
 PC1 --- Backbone
 PC2 --- Backbone
 PC3 --- Backbone
 PC4 --- Backbone
+```
 
 Advantages
 
@@ -328,17 +311,18 @@ Disadvantages
 * Single cable failure affects entire network
 * Low security
 
-⸻
 
-Ring Topology
+### Ring Topology
 
 Devices form a circular path.
 
+```mermaid
 graph LR
 A --- B
 B --- C
 C --- D
 D --- A
+```
 
 Advantages
 
@@ -355,18 +339,19 @@ Token Passing
 
 A token travels around the ring and only the device holding the token can transmit data.
 
-⸻
 
-Star Topology
+### Star Topology
 
 Most common topology today.
 
+```mermaid
 graph TD
 Switch((Switch))
 PC1 --> Switch
 PC2 --> Switch
 PC3 --> Switch
 PC4 --> Switch
+```
 
 Advantages
 
@@ -378,12 +363,12 @@ Disadvantages
 
 * Switch failure affects entire network
 
-⸻
 
-Mesh Topology
+### Mesh Topology
 
 Every device connects directly to every other device.
 
+```mermaid
 graph TD
 A --- B
 A --- C
@@ -391,6 +376,7 @@ A --- D
 B --- C
 B --- D
 C --- D
+```
 
 Advantages
 
@@ -402,9 +388,7 @@ Disadvantages
 * Expensive
 * Difficult to manage
 
-⸻
-
-Hybrid Topology
+### Hybrid Topology
 
 Combination of multiple topology types.
 
@@ -414,12 +398,11 @@ Examples:
 * Enterprises
 * Large organizations
 
-⸻
-
-Tree Topology
+### Tree Topology
 
 Hierarchical structure.
 
+```mermaid
 graph TD
 Root[Core Switch]
 Root --> Branch1
@@ -428,6 +411,7 @@ Branch1 --> PC1
 Branch1 --> PC2
 Branch2 --> PC3
 Branch2 --> PC4
+```
 
 Advantages
 
@@ -438,14 +422,14 @@ Disadvantages
 
 * Root device becomes critical
 
-⸻
 
-OSI Model
+## OSI Model
 
 OSI stands for Open Systems Interconnection.
 
 It explains network communication using seven logical layers.
 
+```mermaid
 flowchart TD
 L7[7 Application]
 L6[6 Presentation]
@@ -455,16 +439,16 @@ L3[3 Network]
 L2[2 Data Link]
 L1[1 Physical]
 L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
+```
 
-Mnemonic
+**Mnemonic**
 
 All People Seem To Need Data Processing
 
-⸻
 
-OSI Layers
+## OSI Layers
 
-Layer 7 - Application
+### **Layer 7 - Application**
 
 User-facing services.
 
@@ -475,9 +459,8 @@ Protocols:
 * DNS
 * SMTP
 
-⸻
 
-Layer 6 - Presentation
+### **Layer 6 - Presentation**
 
 Responsible for:
 
@@ -489,9 +472,7 @@ Example:
 
 * SSL/TLS
 
-⸻
-
-Layer 5 - Session
+### **Layer 5 - Session**
 
 Manages communication sessions.
 
@@ -499,9 +480,7 @@ Example:
 
 * Login sessions
 
-⸻
-
-Layer 4 - Transport
+### Layer 4 - Transport
 
 Responsible for reliable delivery.
 
@@ -516,9 +495,7 @@ Functions:
 * Reassembly
 * Port Numbers
 
-⸻
-
-Layer 3 - Network
+### Layer 3 - Network
 
 Responsible for routing.
 
@@ -531,9 +508,7 @@ Device:
 
 * Router
 
-⸻
-
-Layer 2 - Data Link
+### Layer 2 - Data Link
 
 Responsible for communication within a LAN.
 
@@ -545,9 +520,7 @@ Device:
 
 * Switch
 
-⸻
-
-Layer 1 - Physical
+### Layer 1 - Physical
 
 Actual transmission of bits.
 
@@ -557,44 +530,41 @@ Examples:
 * Fiber
 * Wireless Signals
 
-⸻
-
-TCP/IP Model
+## TCP/IP Model
 
 The practical model used by the Internet.
 
+```mermaid
 flowchart TD
 A[Application]
 B[Transport]
 C[Internet]
 D[Network Access]
 A --> B --> C --> D
+```
 
-⸻
+### OSI vs TCP/IP
 
-OSI vs TCP/IP
+|OSI|	TCP/IP|
+|---|---|
+|7 Layers | 4 Layers|
+|Theoretical | Practical|
+|Used for learning	| Used on Internet|
 
-OSI	TCP/IP
-7 Layers	4 Layers
-Theoretical	Practical
-Used for learning	Used on Internet
 
-⸻
+### Layer Mapping
 
-Layer Mapping
+|OSI Layer	| TCP/IP Layer|
+|---|---|
+|Application |	Application|
+|Presentation	| Application|
+|Session	| Application|
+|Transport	| Transport|
+|Network	| Internet|
+|Data Link	| Network Access|
+|Physical	| Network Access|
 
-OSI Layer	TCP/IP Layer
-Application	Application
-Presentation	Application
-Session	Application
-Transport	Transport
-Network	Internet
-Data Link	Network Access
-Physical	Network Access
-
-⸻
-
-IPv4
+## IPv4
 
 Internet Protocol Version 4.
 
@@ -610,25 +580,23 @@ Structure
 * 4 octets
 * Each octet ranges from 0-255
 
-⸻
 
-Address Types
+### Address Types
 
-Unicast
+**Unicast**
 
 One-to-one communication.
 
-Broadcast
+**Broadcast**
 
 One-to-all communication.
 
-Multicast
+**Multicast**
 
 One-to-many communication.
 
-⸻
 
-IPv6
+## IPv6
 
 Designed to replace IPv4.
 
@@ -642,36 +610,34 @@ Characteristics
 * Hexadecimal format
 * Vast address space
 
-⸻
 
-Address Types
+### Address Types
 
-Unicast
+**Unicast**
 
 One sender → One receiver
 
-Multicast
+**Multicast**
 
 One sender → Many receivers
 
-Anycast
+**Anycast**
 
 One sender → Nearest receiver
 
-⸻
 
 IPv4 vs IPv6
 
-Feature	IPv4	IPv6
-Bits	32	128
-Format	Decimal	Hexadecimal
-Broadcast	Yes	No
-Security	Optional	IPsec Built-In
-Configuration	DHCP	SLAAC
+|Feature|	IPv4|	IPv6|
+|---|---|---|
+|Bits	| 32	| 128|
+|Format	| Decimal |	Hexadecimal|
+|Broadcast | Yes | No|
+|Security |	Optional|	IPsec Built-In|
+|Configuration| DHCP | SLAAC|
 
-⸻
 
-MAC Address
+## MAC Address
 
 Media Access Control Address.
 
@@ -681,16 +647,17 @@ Example:
 
 00:1A:2B:3C:4D:5E
 
-⸻
 
 MAC Address Structure
 
+```mermaid
 flowchart LR
 A[First 24 Bits<br>OUI]
 B[Last 24 Bits<br>Device Identifier]
 A --> B
+```
 
-OUI
+## OUI
 
 Organizationally Unique Identifier.
 
@@ -698,17 +665,13 @@ Assigned by IEEE.
 
 Identifies the manufacturer.
 
-⸻
-
-Device Identifier
+## Device Identifier
 
 Assigned by manufacturer.
 
 Identifies the specific device.
 
-⸻
-
-Key Cybersecurity Takeaways
+### Key Cybersecurity Takeaways
 
 * Networking is the foundation of cybersecurity.
 * OSI helps identify where attacks occur.
