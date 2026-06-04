@@ -126,7 +126,7 @@ Example:
 
 When you see the OUI, you can often determine who made the device.
 
-## NIC (Device Identifier)
+## NIC (Device Identifier) - Network Interface Card
 
 The last 24 bits of the MAC address.
 
