@@ -88,12 +88,13 @@ Security teams often use subnetting and VLSM to:
 * Isolate sensitive systems
 
 Example:
-|---|
-|Finance VLAN|
-|HR VLAN|
-|Guest WiFi VLAN|
-|Server VLAN|
 
+```text
+Finance VLAN
+HR VLAN
+Guest WiFi VLAN
+Server VLAN
+```
 
 If an attacker compromises Guest Wifi, they should not automatically reach Finance systems.
 
