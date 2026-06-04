@@ -289,7 +289,7 @@ Actual physical layout of devices and cables.
 
 How data flows through the network.
 
-### Bus Topology
+## Bus Topology
 
 All devices share one backbone cable.
 
@@ -312,7 +312,7 @@ Disadvantages
 * Low security
 
 
-### Ring Topology
+## Ring Topology
 
 Devices form a circular path.
 
@@ -340,7 +340,7 @@ Token Passing
 A token travels around the ring and only the device holding the token can transmit data.
 
 
-### Star Topology
+## Star Topology
 
 Most common topology today.
 
@@ -364,7 +364,7 @@ Disadvantages
 * Switch failure affects entire network
 
 
-### Mesh Topology
+## Mesh Topology
 
 Every device connects directly to every other device.
 
@@ -388,7 +388,7 @@ Disadvantages
 * Expensive
 * Difficult to manage
 
-### Hybrid Topology
+## Hybrid Topology
 
 Combination of multiple topology types.
 
@@ -398,7 +398,7 @@ Examples:
 * Enterprises
 * Large organizations
 
-### Tree Topology
+## Tree Topology
 
 Hierarchical structure.
 
