@@ -573,7 +573,9 @@ Used to identify devices on a network.
 
 Example:
 
+```text
 192.168.1.1
+```
 
 Structure
 
@@ -603,7 +605,9 @@ Designed to replace IPv4.
 
 Example:
 
+```texr
 2001:db8::1
+```
 
 Characteristics
 
@@ -646,8 +650,9 @@ Unique identifier assigned to a Network Interface Card (NIC).
 
 Example:
 
+```text
 00:1A:2B:3C:4D:5E
-
+```
 
 MAC Address Structure
 
