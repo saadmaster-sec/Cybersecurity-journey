@@ -382,23 +382,23 @@ Real-World Usage	Rare	Very Common
 
 ## Common Interview Questions
 
-## What is a subnet mask?
+### What is a subnet mask?
 
 A subnet mask identifies the network and host portions of an IP address.
 
-## What is CIDR?
+### What is CIDR?
 
 CIDR (Classless Inter-Domain Routing) uses a prefix length such as /24 to define the network portion of an IP address.
 
-## What is VLSM?
+### What is VLSM?
 
 VLSM (Variable Length Subnet Masking) allows multiple subnet sizes within the same network, improving IP address utilization.
 
-## Why subtract 2 when calculating hosts?
+### Why subtract 2 when calculating hosts?
 
 Because one address is reserved for the network address and one for the broadcast address.
 
-## Can 192.168.1.10/24 communicate directly with 192.168.2.10/24?
+### Can 192.168.1.10/24 communicate directly with 192.168.2.10/24?
 
 No. They are in different networks and require a router to communicate.
 
