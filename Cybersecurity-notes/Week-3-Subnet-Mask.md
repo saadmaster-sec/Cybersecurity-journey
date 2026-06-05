@@ -367,16 +367,21 @@ Flexibility	Low	High
 IP Utilization	Less Efficient	More Efficient
 Complexity	Easy	Moderate
 Real-World Usage	Rare	Very Common
-11. Quick Reference Table
-CIDR	Mask	Hosts
-/24	255.255.255.0	254
-/25	255.255.255.128	126
-/26	255.255.255.192	62
-/27	255.255.255.224	30
-/28	255.255.255.240	14
-/29	255.255.255.248	6
-/30	255.255.255.252	2
-Common Interview Questions
+
+## 11. Quick Reference Table
+
+|CIDR|	Mask|	Hosts|
+|---|---|---|
+/24	255.255.255.0	254|
+/25	255.255.255.128	126|
+/26	255.255.255.192	62|
+/27	255.255.255.224	30|
+/28	255.255.255.240	14|
+/29	255.255.255.248	6|
+/30	255.255.255.252	2|
+
+## Common Interview Questions
+
 What is a subnet mask?
 
 A subnet mask identifies the network and host portions of an IP address.
@@ -397,7 +402,8 @@ Can 192.168.1.10/24 communicate directly with 192.168.2.10/24?
 
 No. They are in different networks and require a router to communicate.
 
-Cheat Sheet
+## Cheat Sheet
+```text
 Hosts = 2^(32-CIDR) - 2
 
 Block Size = 256 - Last Octet
@@ -409,3 +415,4 @@ Broadcast Address = Last Address
 First Host = Network + 1
 
 Last Host = Broadcast - 1
+```
