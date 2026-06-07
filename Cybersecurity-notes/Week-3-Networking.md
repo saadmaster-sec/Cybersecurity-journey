@@ -598,6 +598,15 @@ One-to-all communication.
 
 One-to-many communication.
 
+### IPv4 Classes and Ranges
+
+|Class | First Octet Range | IP Range	| Default Mask	| CIDR	| Hosts per Network	| Common Use|
+|---|---|---|---|---|---|---|
+|A	| 1 - 126 |	1.0.0.0 - 126.255.255.255 | 255.0.0.0	| /8	| 16,777,214	| Very large organizations, ISPs|
+|B	| 128 - 191 |	128.0.0.0 - 191.255.255.255 |	255.255.0.0	| /16	| 65,534	| Universities, large companies|
+|C	| 192 - 223 |	192.0.0.0 - 223.255.255.255 | 255.255.255.0	| /24	| 254	| Homes, small businesses, offices|
+|D	| 224 - 239 | 224.0.0.0 - 239.255.255.255	| N/A	| N/A	| N/A	| Multicast traffic|
+|E	| 240 - 255	| 240.0.0.0 - 255.255.255.255	| N/A	| N/A	| N/A	| Experimental and research|
 
 ## IPv6
 
