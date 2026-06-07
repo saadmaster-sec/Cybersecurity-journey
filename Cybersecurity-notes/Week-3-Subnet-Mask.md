@@ -105,280 +105,348 @@ Since the first 24 bits are 1:
 ## 4. How Subnetting Works
 
 Suppose we have:
-
+```text
 192.168.1.0/24
+```
 
 This contains:
-
+```text
 256 total addresses
 254 usable hosts
+```
 
 We need 4 subnets.
 
 Borrow 2 host bits:
-
+```text
 /24 + 2 = /26
+```
 
 New subnet mask:
-
+```text
 255.255.255.192
-Finding Block Size
+```
+
+### Finding Block Size
 
 Formula:
-
+```text
 256 - Last Octet
+```
 
 Example:
-
+```text
 255.255.255.192
 
 256 - 192 = 64
+```
 
 Block size:
-
+```text
 64
+```
 
 Subnet increments:
-
+```text
 0
 64
 128
 192
+```
 
 Subnets:
-
+```text
 192.168.1.0/26
 192.168.1.64/26
 192.168.1.128/26
 192.168.1.192/26
-5. CIDR (Classless Inter-Domain Routing)
+```
+
+## 5. CIDR (Classless Inter-Domain Routing)
 
 CIDR replaced old Class A, B, and C addressing.
 
 Instead of:
-
+```text
 Class A
 Class B
 Class C
+```
 
 We use:
-
+```text
 /8
 /16
 /24
 /27
 /30
+```
 
 Example:
-
+```text
 192.168.1.0/24
+```
 
 The "/24" means:
-
+```text
 24 bits = Network
 8 bits = Host
-CIDR Examples
-CIDR	Subnet Mask
-/24	255.255.255.0
-/25	255.255.255.128
-/26	255.255.255.192
-/27	255.255.255.224
-/28	255.255.255.240
-/29	255.255.255.248
-/30	255.255.255.252
-6. Calculating Hosts
+```
+
+## CIDR Examples
+
+|CIDR	| Subnet Mask|
+|---|---|
+|/24	| 255.255.255.0|
+|/25	| 255.255.255.128|
+|/26	| 255.255.255.192|
+|/27	| 255.255.255.224|
+|/28	| 255.255.255.240|
+|/29	| 255.255.255.248|
+|/30	| 255.255.255.252|
+
+## 6. Calculating Hosts
 
 Formula:
-
+```text
 Hosts = 2^(Host Bits) - 2
+```
 
 Why subtract 2?
-
+```text
 1 = Network Address
 1 = Broadcast Address
+```
+
 Example 1
+```text
 /24
+```
 
 Host bits:
-
+```text
 32 - 24 = 8
+```
 
 Hosts:
-
+```text
 2^8 - 2
 = 256 - 2
 = 254
+```
+
 Example 2
+```text
 /27
+```
 
 Host bits:
-
+```text
 32 - 27 = 5
+```
 
 Hosts:
-
+```text
 2^5 - 2
 = 32 - 2
 = 30
-7. Complete Subnetting Example
+```
+
+## 7. Complete Subnetting Example
 
 Given:
-
+```text
 192.168.1.0/24
+```
 
 Need:
-
+```text
 4 subnets
+```
 
 Step 1:
 
 Borrow 2 bits.
-
+```text
 /24 → /26
+```
 
 Step 2:
 
 Find block size.
-
+```text
 256 - 192 = 64
+```
 
 Step 3:
 
 Generate subnets.
 
-Network	First Host	Last Host	Broadcast
-192.168.1.0/26	.1	.62	.63
-192.168.1.64/26	.65	.126	.127
-192.168.1.128/26	.129	.190	.191
-192.168.1.192/26	.193	.254	.255
-8. What is VLSM?
+|Network	| First Host	| Last Host	| Broadcast|
+|---|---|---|---|
+|192.168.1.0/26	| .1	| .62	| .63
+|192.168.1.64/26	| .65	| .126	| .127
+|192.168.1.128/26	| .129	| .190	| .191
+|192.168.1.192/26	| .193	| .254	| .255
+
+## 8. What is VLSM?
 
 VLSM = Variable Length Subnet Masking
 
 Allows different subnet sizes within the same network.
 
 Traditional subnetting:
-
+```text
 /26
 /26
 /26
 /26
+```
 
 VLSM:
-
+```text
 /26
 /27
 /28
 /29
+```
 
 Much more efficient.
 
-9. VLSM Example
+## 9. VLSM Example
 
 Network:
-
+```tex
 192.168.1.0/24
+```
 
 Requirements:
 
-Department	Hosts Needed
-HR	50
-Sales	20
-IT	10
-Finance	5
+|Department	| Hosts Needed|
+|---|---|
+|HR	| 50|
+|Sales	| 20|
+|IT	| 10|
+|Finance	| 5|
+
 Step 1: Sort Largest to Smallest
+```text
 50
 20
 10
 5
+```
+
 Step 2: Allocate Networks
-HR
+### HR
 
 Needs 50 hosts.
-
+```text
 /26 = 62 hosts
+```
 
 Assign:
-
+```text
 192.168.1.0/26
+```
 
 Range:
-
+```text
 192.168.1.1 - 192.168.1.62
+```
 
 Broadcast:
-
+```text
 192.168.1.63
-Sales
+```
+
+### Sales
 
 Needs 20 hosts.
-
+```text
 /27 = 30 hosts
+```
 
 Assign:
-
+```text
 192.168.1.64/27
+```
 
 Range:
-
+```text
 192.168.1.65 - 192.168.1.94
+```
 
 Broadcast:
-
+```text
 192.168.1.95
-IT
+```
+
+### IT
 
 Needs 10 hosts.
-
+```text
 /28 = 14 hosts
+```
 
 Assign:
-
+```text
 192.168.1.96/28
+```
 
 Range:
-
+```text
 192.168.1.97 - 192.168.1.110
+```
 
 Broadcast:
-
+```text
 192.168.1.111
-Finance
+```
+
+### Finance
 
 Needs 5 hosts.
-
+```text
 /29 = 6 hosts
+```
 
 Assign:
-
+```text
 192.168.1.112/29
+```
 
 Range:
-
+```text
 192.168.1.113 - 192.168.1.118
+```
 
 Broadcast:
-
+```text
 192.168.1.119
-10. Subnetting vs VLSM
-Feature	Subnetting	VLSM
-Subnet Size	Same	Different
-Flexibility	Low	High
-IP Utilization	Less Efficient	More Efficient
-Complexity	Easy	Moderate
-Real-World Usage	Rare	Very Common
+```
+
+## 10. Subnetting vs VLSM
+
+|Feature	| Subnetting	| VLSM|
+|---|---|---|
+|Subnet Size	| Same	| Different|
+|Flexibility	| Low	| High|
+|IP Utilization	| Less Efficient | More Efficient|
+|Complexity	| Easy	| Moderate|
+|Real-World Usage	| Rare	| Very Common|
 
 ## 11. Quick Reference Table
 
 |CIDR|	Mask|	Hosts|
 |---|---|---|
-/24	255.255.255.0	254|
-/25	255.255.255.128	126|
-/26	255.255.255.192	62|
-/27	255.255.255.224	30|
-/28	255.255.255.240	14|
-/29	255.255.255.248	6|
-/30	255.255.255.252	2|
+|/24	| 255.255.255.0	| 254|
+|/25	| 255.255.255.128	| 126|
+|/26	| 255.255.255.192	| 62|
+|/27	| 255.255.255.224	| 30|
+|/28	| 255.255.255.240	| 14|
+|/29	| 255.255.255.248	| 6|
+|/30	| 255.255.255.252	| 2|
 
 ## Common Interview Questions
 
