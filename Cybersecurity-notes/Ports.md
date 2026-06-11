@@ -265,10 +265,9 @@ Using Metasploit Framework:
 |Term | Meaning|
 |---|---|
 |Exploit	| Uses vulnerability|
-|Payload	| What runs afterward|
 |Port	| Door number|
 |Apache	| Receptionist/web server|
-|Payload	| Package delivered inside|
+|Payload | Package delivered inside|
 
 ## Protocols (Networking)
 
