@@ -71,33 +71,23 @@ Here are the ports you’ll see most often in IT, cybersecurity, networking, and
 |9200	| TCP	| Elasticsearch |
 |27017 |	TCP |	MongoDB |
 
-### Very Important Ports for Cybersecurity
+## Very Important Ports for Cybersecurity
 
 If you're learning cybersecurity or SOC analysis, focus heavily on these:
-
+```text
 21 → FTP
-
 22 → SSH
-
 23 → Telnet
-
 25 → SMTP
-
 53 → DNS
-
 80/443 → Web traffic
-
 135–139 → Windows networking
-
 445 → SMB
-
 3389 → RDP
-
 1433 → MSSQL
-
 3306 → MySQL
-
 5985/5986 → WinRM
+```
 
 Easy Way to Remember
 Web
