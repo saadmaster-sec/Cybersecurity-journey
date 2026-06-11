@@ -65,7 +65,7 @@ OpenSSH Server
 
 5. Install OpenSSH Server
 
-### Screenshot
+
 
 ![OpenSSH Installation](SSH_screenshots/SSH.png)
 
@@ -116,15 +116,7 @@ TCP    0.0.0.0:22      LISTENING
 TCP    [::]:22         LISTENING
 ```
 
-### Screenshot
-
-Add screenshot here:
-
-```text
-screenshots/03-port-22-listening.png
-```
-
----
+![TCP](SSH_screenshots/Listen.png)
 
 # Step 4: Verify Firewall Rule
 
