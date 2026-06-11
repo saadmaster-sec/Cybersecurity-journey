@@ -293,7 +293,7 @@ Simple Analogy
 
 ## Common Networking Protocols  
 
-- HTTP
+## HTTP
 ```text
 HyperText Transfer Protocol
 
