@@ -90,30 +90,36 @@ If you're learning cybersecurity or SOC analysis, focus heavily on these:
 ```
 
 Easy Way to Remember
+```text
 Web
 80 = HTTP
 443 = HTTPS
-
+```
+```text
 Remote Access
 22 = SSH
 23 = Telnet
 3389 = RDP
-
+```
+```text
 File Transfer
 20/21 = FTP
 445 = SMB
-
+```
+```text
 Email
 25 = SMTP
 110 = POP3
 143 = IMAP
-
+```
+```text
 Networking Infrastructure
 53 = DNS
 67/68 = DHCP
 123 = NTP
+```
 
-Quick Cybersecurity Tip
+### Quick Cybersecurity Tip
 
 Attackers commonly target:
 
@@ -130,19 +136,19 @@ That’s why these ports are often monitored in SIEMs and firewalls.
 ### A port is like a numbered door on a computer that allows different services to communicate over a network.
 
 Your computer has:
-
+```text
 an IP address → the house address
-
 ports → individual doors/rooms for services
+```
 
 Example:
-
+```text
 Port 80 = website traffic (HTTP)
 
 Port 443 = secure websites (HTTPS)
 
 Port 22 = SSH remote access
-
+```
 Example
 
 When you open a website: https://google.com
@@ -152,14 +158,16 @@ Your browser connects to: Google IP : Port 443
 Because HTTPS uses port 443.
 
 Common Ports
-Port	Service
-22	SSH
-80	HTTP
-443	HTTPS
-445	SMB
-3389	RDP
 
-Why Ports Matter in Cybersecurity
+|Port | Service|
+|---|---|
+|22 | SSH|
+|80 | HTTP|
+|443 |	HTTPS|
+|445 | SMB|
+|3389 | RDP|
+
+### Why Ports Matter in Cybersecurity
 
 Attackers scan ports to find running services:
 
@@ -182,46 +190,57 @@ Simple Explanation
 When someone visits a website:
 
 Browser sends request
-Apache receives it
-Apache sends back the webpage files
-Example Flow
-User Browser → Apache Server → Website Opens
-Apache Usually Uses
-Port	Purpose
-80	HTTP
-443	HTTPS
 
-Why Apache Is Important
+Apache receives it
+
+Apache sends back the webpage files
+
+Example Flow
+
+User Browser → Apache Server → Website Opens
+
+Apache Usually Uses
+
+80	- HTTP
+
+443 - HTTPS
+
+## Why Apache Is Important
 
 Many websites run on Apache:
 
-company websites
-blogs
+company websites,
+blogs,
 web applications
 
 In Cybersecurity
 
 Apache logs are useful for:
-
+```text
 detecting attacks
 suspicious requests
 brute force attempts
 web exploitation
+```
 
 Common log locations on Linux:
-
+```text
 /var/log/apache2/
 /var/log/httpd/
-Payload
+```
 
-### A payload is the actual code or data delivered during an attack or exploit.
+## Payload
+
+A payload is the actual code or data delivered during an attack or exploit.
 
 Think of it like: the “main action” after the attack succeeds.
+
 Example An attacker exploits a vulnerability:
 
 Exploit → Payload Executes
 
 The exploit opens the door.
+
 The payload does the job.
 
 Types of Payloads
@@ -237,12 +256,11 @@ Types of Payloads
 Example in Ethical Hacking Labs
 
 Using Metasploit Framework:
+```text
+**msfvenom -p windows/meterpreter/reverse_tcp windows/meterpreter/reverse_tcp = payload type**
+```
 
-msfvenom -p windows/meterpreter/reverse_tcp
-windows/meterpreter/reverse_tcp
-= payload type
-
-Important Difference
+### Important Difference
 
 |Term | Meaning|
 |---|---|
@@ -258,9 +276,9 @@ A protocol is a set of rules that devices follow to communicate over a network o
 
 Think of it like:
 
-humans use languages (English, French)
+Humans use languages (English, French)
 
-computers use protocols
+Computers use protocols
 
 Without protocols, computers would not understand each other.
 
@@ -274,10 +292,10 @@ Simple Analogy
 | Apache	| Receptionist |
 | Payload | Package/content |
 
-### Common Networking Protocols  
+## Common Networking Protocols  
 
 - HTTP
-
+```text
 HyperText Transfer Protocol
 
 Used for websites.
@@ -287,9 +305,10 @@ Default port: 80
 Example: http://example.com
 
 Data is NOT encrypted.
+```
 
-- HTTPS
-
+## HTTPS
+```text
 HTTP Secure
 
 Secure/encrypted version of HTTP.
@@ -299,9 +318,10 @@ Default port: 443
 Example: https://google.com
 
 Uses SSL/TLS encryption.
+```
 
-- TCP
-
+## TCP
+```text
 Transmission Control Protocol
 
 Reliable communication protocol.
@@ -319,9 +339,9 @@ file transfers
 Example: When downloading a file:
 
 TCP checks all pieces arrive correctly
-
-- UDP
-
+```
+## UDP
+```text
 User Datagram Protocol
 
 Faster but less reliable than TCP.
@@ -337,8 +357,10 @@ streaming
 voice/video calls
 
 Example: Google Meet audio/video often uses UDP because speed matters more than perfection.
+```
 
-### TCP vs UDP
+## TCP vs UDP
+
 | Feature |	TCP |	UDP |
 |---|---|---|
 | Reliable | Yes | No |
@@ -346,8 +368,8 @@ Example: Google Meet audio/video often uses UDP because speed matters more than 
 | Error Checking | Yes | Minimal |
 | Used For | Web, files	| Streaming, games |
 
-### - DNS
-
+## - DNS
+```text
 Domain Name System
 
 Converts website names into IP addresses.
@@ -357,21 +379,20 @@ Example: google.com → 142.x.x.x
 Port: 53
 
 Uses both TCP and UDP.
+```
 
-### - DHCP
-
+## - DHCP
+```text
 Dynamic Host Configuration Protocol
 
 Automatically gives devices:
 
 IP address
-gateway
-DNS
 
 Ports: 67/68
-
-### - FTP
-
+```
+## FTP
+```text
 File Transfer Protocol
 
 Transfers files between systems.
@@ -379,9 +400,10 @@ Transfers files between systems.
 Ports: 20/21
 
 Not secure by default.
+```
 
-### - SSH
-
+## SSH
+```text
 Secure Shell
 
 Secure remote access to another computer.
@@ -389,16 +411,19 @@ Secure remote access to another computer.
 Port: 22
 
 Admins use SSH to manage Linux servers remotely.
+```
 
-### - SMTP
-
+## SMTP
+```text
 Simple Mail Transfer Protocol
 
 Sends emails.
 
 Port: 25
-IMAP / POP3
+```
 
+## IMAP / POP3
+```text
 Used for receiving emails.
 
 Protocol	Port
@@ -409,9 +434,10 @@ Secure versions:
 
 993 (IMAPS)
 995 (POP3S)
+```
 
-### - SMB
-
+## SMB
+```text
 Server Message Block
 
 Windows file sharing protocol.
@@ -419,6 +445,7 @@ Windows file sharing protocol.
 Port: 445
 
 Frequently targeted in cyberattacks.
+```
 
 Important Cybersecurity Protocols
 
@@ -431,33 +458,37 @@ Important Cybersecurity Protocols
 | RDP	| Remote desktop attacks |
 | FTP	| Weak file transfers | 
 
-#### How Everything Works Together
+### How Everything Works Together
 
 When you visit a website:
 
-Browser
+```mermaid
+flowchart LR
+    A[User enters URL in Browser]
+    B[DNS Lookup]
+    C[DNS returns IP Address]
+    D[Browser connects to IP on Port 443]
+    E[TCP Connection Established]
+    F[HTTPS/TLS Handshake]
+    G[HTTP Request Sent over HTTPS]
+    H[Apache/Nginx Web Server]
+    I[Server Processes Request]
+    J[HTTP Response Returned]
+    K[Browser Renders Website]
 
-   ↓
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+```
 
-DNS finds IP
-
-   ↓
-
-Connects to Port 443
-
-   ↓
-
-Uses HTTPS protocol
-
-   ↓
-
-Apache/Nginx web server responds
-
-   ↓
-
-Website loads
-
-Tools Used to Analyze Protocols
+### Tools Used to Analyze Protocols
 
 | Tool |	Purpose |
 |---|---|
@@ -465,6 +496,7 @@ Tools Used to Analyze Protocols
 | Nmap |	Port/service scanning |
 | tcpdump |	Command-line packet capture |
 | Burp Suite |	Web traffic testing |
+
 ### - Easy Way to Remember
 Web
 HTTP = 80
