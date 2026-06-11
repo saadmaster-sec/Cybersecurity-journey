@@ -175,7 +175,6 @@ Connecting to 192.x.x.x port 22
 
 No password prompt appeared.
 
----
 
 ## Investigation
 
@@ -304,7 +303,7 @@ sshtest@SAAD C:\Users\sshtest>
 4. SSH authentication requires a password, not a Windows PIN.
 5. Systematic troubleshooting is more effective than guessing.
 
----
+
 
 # Skills Practiced
 
