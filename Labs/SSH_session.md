@@ -17,6 +17,41 @@ Network Configuration:
 * Bridged Adapter
 * Same subnet communication
 
+# Initial Problem
+
+After installing and configuring OpenSSH Server on Windows, I attempted to connect from my Kali Linux VM using SSH.
+
+```bash
+ssh username@WINDOWS_HOST
+```
+
+However, the connection would hang and no password prompt appeared.
+
+At this stage, it was unclear whether the issue was related to:
+
+* SSH configuration
+* Network connectivity
+* Firewall rules
+* User authentication
+
+Instead of making assumptions, I began troubleshooting systematically to identify the root cause.
+
+# Troubleshooting Methodology
+
+To isolate the issue, I performed the following checks:
+
+1. Verified that OpenSSH Server was installed.
+2. Verified that the SSH service was running.
+3. Confirmed that port 22 was listening.
+4. Tested network connectivity between Windows and Kali.
+5. Performed ping tests in both directions.
+6. Reviewed Windows Firewall rules.
+7. Tested SSH locally on the Windows machine.
+8. Verified user authentication settings.
+
+This process helped narrow the issue down step-by-step rather than guessing.
+
+
 
 # Step 1: Install OpenSSH Server on Windows
 
@@ -62,6 +97,7 @@ OpenSSH SSH Server
 ```
 
 4. Open Properties
+   
 5. Change Startup Type:
 
 ```text
