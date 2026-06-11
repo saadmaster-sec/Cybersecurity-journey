@@ -1,4 +1,4 @@
-# SSH from Kali Linux to Windows 11 Lab
+# SSH from Kali Linux to Windows Lab
 
 ## Objective
 
