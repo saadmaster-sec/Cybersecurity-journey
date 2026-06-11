@@ -462,29 +462,29 @@ Important Cybersecurity Protocols
 When you visit a website:
 
 ```mermaid
-flowchart LR
-    A[User enters URL in Browser]
-    B[DNS Lookup]
-    C[DNS returns IP Address]
-    D[Browser connects to IP on Port 443]
-    E[TCP Connection Established]
-    F[HTTPS/TLS Handshake]
-    G[HTTP Request Sent over HTTPS]
-    H[Apache/Nginx Web Server]
-    I[Server Processes Request]
-    J[HTTP Response Returned]
-    K[Browser Renders Website]
+flowchart TD
+    A[Browser]
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
+    subgraph DNS
+        B[DNS Lookup]
+        C[IP Address Found]
+    end
+
+    subgraph Connection
+        D[Port 443]
+        E[TCP Handshake]
+        F[TLS Handshake]
+    end
+
+    subgraph Web_Server
+        G[Apache/Nginx]
+        H[Process Request]
+        I[Send Response]
+    end
+
+    J[Website Loads]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I --> J
 ```
 
 ### Tools Used to Analyze Protocols
