@@ -52,7 +52,6 @@ To isolate the issue, I performed the following checks:
 This process helped narrow the issue down step-by-step rather than guessing.
 
 
-
 # Step 1: Install OpenSSH Server on Windows
 
 1. Open **Settings**
@@ -68,13 +67,7 @@ OpenSSH Server
 
 ### Screenshot
 
-Add screenshot here:
-
-```text
-screenshots/01-openssh-install.png
-```
-
----
+![OpenSSH Installation](SSH_screenshots/SSH.png)
 
 # Step 2: Configure SSH Service
 
@@ -106,15 +99,7 @@ Manual → Automatic
 
 6. Start the service
 
-### Screenshot
-
-Add screenshot here:
-
-```text
-screenshots/02-ssh-service-automatic.png
-```
-
----
+![SSH Service](SSH_screenshots/SSH_Status.png)
 
 # Step 3: Verify SSH Server is Listening
 
@@ -156,22 +141,14 @@ OpenSSH SSH Server (sshd)
 Enabled : True
 ```
 
-### Screenshot
-
-Add screenshot here:
-
-```text
-screenshots/04-firewall-rule.png
-```
-
----
+![Firewall](SSH_screenshots/Firewall.png)
 
 # Step 5: Verify Network Connectivity
 
 From Kali:
 
 ```bash
-ping -c 4 192.168.0.139
+ping -c 4 192.x.x.x
 ```
 
 Initial Result:
@@ -182,7 +159,7 @@ Initial Result:
 
 This indicated that the issue was not SSH itself but network communication.
 
----
+![No connection](SSH_screenshots/No_Connection.png)
 
 # Troubleshooting Process
 
@@ -191,13 +168,13 @@ This indicated that the issue was not SSH itself but network communication.
 SSH connection was hanging:
 
 ```bash
-ssh -v sabah@192.168.0.139
+ssh -v username@ipaddress
 ```
 
 Output stopped at:
 
 ```text
-Connecting to 192.168.0.139 port 22
+Connecting to 192.x.x.x port 22
 ```
 
 No password prompt appeared.
@@ -219,13 +196,13 @@ Confirmed SSH service was listening on port 22.
 Windows:
 
 ```text
-192.168.0.139
+192.x.x.x
 ```
 
 Kali:
 
 ```text
-192.168.0.151
+192.x.x.x
 ```
 
 ### Ping Testing
@@ -259,7 +236,7 @@ Set-NetFirewallProfile -Profile Domain,Private,Public -Enabled False
 Ping succeeded:
 
 ```bash
-ping -c 4 192.168.0.139
+ping -c 4 192.x.x.x
 ```
 
 Result:
@@ -268,24 +245,20 @@ Result:
 0% packet loss
 ```
 
+![Firewall](SSH_screenshots/Firewall.png)
+
 SSH immediately progressed to authentication.
 
 ### Screenshot
 
-Add screenshot here:
-
-```text
-screenshots/05-successful-ping.png
-```
-
----
+![ping success](SSH_screenshots/ping_success.png)
 
 # Authentication Issue
 
 SSH reached the login prompt:
 
 ```text
-sabah@192.168.0.139's password:
+username@ipaddress's password:
 ```
 
 However, authentication failed.
@@ -300,25 +273,21 @@ SSH requires an actual account password and does not accept:
 * Fingerprint
 * Facial Recognition
 
----
-
 # Solution
 
 Created a dedicated local SSH user:
 
 ```powershell
-net user sshtest StrongPass123! /add
+net user sshtest Password /add
 net localgroup Administrators sshtest /add
 ```
-
----
 
 # Successful SSH Connection
 
 From Kali:
 
 ```bash
-ssh sshtest@192.168.0.139
+ssh sshtest@192.x.x.x
 ```
 
 Successful login:
@@ -329,15 +298,7 @@ Microsoft Windows [Version 10.0.xxxxx]
 sshtest@SAAD C:\Users\sshtest>
 ```
 
-### Screenshot
-
-Add screenshot here:
-
-```text
-screenshots/06-successful-ssh-login.png
-```
-
----
+![SSH session](SSH_screenshots/SSH_session.png)
 
 # Lessons Learned
 
