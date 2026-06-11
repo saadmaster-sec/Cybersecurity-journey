@@ -101,10 +101,10 @@ Manual → Automatic
 
 ![SSH Service](SSH_screenshots/SSH_Status.png)
 
-**At this point, OpenSSH Server had been installed and the SSH service was configured to start automatically. However, when attempting to connect from Kali Linux, the SSH connection would time out without displaying a password prompt.
+**At this point, OpenSSH Server had been installed and the SSH service was configured to start automatically. However, when attempting to connect from Kali Linux, the SSH connection would time out without displaying a password prompt.**
 
-To determine whether the issue was caused by the SSH service itself or a network-related problem, I began using PowerShell to verify that the SSH service was running correctly and that port 22 was actively listening for incoming connections.**
-
+**To determine whether the issue was caused by the SSH service itself or a network-related problem, I began using PowerShell to verify that the SSH service was running correctly and that port 22 was actively listening for incoming connections.
+**
 
 # Step 3: Verify SSH Server is Listening
 
