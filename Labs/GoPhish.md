@@ -189,4 +189,4 @@ The lab provided insight into how organizations conduct phishing-awareness train
 
 # ⚠️ Disclaimer
 
-This repository is intended solely for cybersecurity education, research, and defensive security awareness training. Activities were conducted only within a controlled laboratory environment using systems and accounts for which authorization was granted.
+This Lab is intended solely for cybersecurity education, research, and defensive security awareness training. Activities were conducted only within a controlled laboratory environment using systems and accounts for which authorization was granted.
