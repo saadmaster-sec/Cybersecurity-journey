@@ -29,11 +29,9 @@ The purpose of this lab was to:
 * Web Browser
 * URL Analysis Platforms:
 
-- VirusTotal
-
-- Hybrid Analysis
-
-- MetaDefender
+** VirusTotal
+** Hybrid Analysis
+** MetaDefender
 
 # Lab Overview
 
@@ -75,11 +73,8 @@ To understand how credential harvesting works in a safe and isolated environment
 ### Observations:
 
 * The phishing page closely resembled the legitimate login portal.
-
 * Test credentials entered into the page were captured by the demonstration environment.
-
 * The user was automatically redirected to the legitimate website after submission.
-
 * This behavior can make phishing attempts appear legitimate to unsuspecting users.
 
 Screenshot
@@ -108,11 +103,8 @@ A public URL was generated through a tunneling service, allowing the demonstrati
 ### Observations:
 
 * A public URL was generated for demonstration purposes.
-
 * The phishing page could be opened from another device.
-
 * After entering test credentials, the user was redirected to the legitimate website.
-
 * The demonstration environment displayed the submitted credentials.
 
 ## LocalXpose
@@ -186,7 +178,6 @@ Using multiple reputation and analysis services can help identify suspicious lin
 Key Takeaways
 
 * Phishing remains one of the most common cyberattack methods.
-
 * Visual similarity alone should never be trusted.
 * Users should always verify website URLs before entering credentials.
 * Security awareness training is essential for reducing phishing success rates.
