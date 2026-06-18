@@ -28,12 +28,11 @@ The purpose of this lab was to:
 * Zphisher (Educational Lab Environment)
 * Web Browser
 * URL Analysis Platforms:
-
--- VirusTotal
-
--- Hybrid Analysis
-
--- MetaDefender
+```text
+ VirusTotal
+ Hybrid Analysis
+MetaDefender
+```
 
 # Lab Overview
 
