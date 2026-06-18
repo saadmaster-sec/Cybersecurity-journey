@@ -110,7 +110,7 @@ To understand how phishing campaigns may expose fradulent websites to users outs
 
 During the lab, different hosting methods were observed to understand how phishing pages can be made accessible beyond a local environment.
 
-## CloudFlare Tunnel
+## CloudFlared Tunnel
 
 A public URL was generated through a tunneling service, allowing the demonstration page to be accessed from another device over the internet.
 
