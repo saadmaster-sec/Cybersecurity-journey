@@ -6,7 +6,6 @@ This repository documents my hands-on experience exploring GoPhish within a cont
 
 All activities were conducted in an isolated lab environment using authorized systems and accounts.
 
----
 
 # Learning Objectives
 
@@ -18,7 +17,6 @@ All activities were conducted in an isolated lab environment using authorized sy
 * Study campaign administration workflows
 * Analyze reporting and campaign metrics
 
----
 
 # Environment Setup
 
@@ -30,7 +28,6 @@ All activities were conducted in an isolated lab environment using authorized sy
 | Environment      | Virtual Lab                 |
 | Purpose          | Security Awareness Research |
 
----
 
 # Step 1 – Launching GoPhish
 
@@ -47,7 +44,6 @@ The first stage involved starting the GoPhish application and verifying that all
 
 ![GoPhish Startup](screenshots/01-startup.png)
 
----
 
 # Step 2 – Accessing the Administration Interface
 
@@ -64,7 +60,6 @@ After startup, the administrative web interface was accessed through the browser
 
 ![Admin Login](screenshots/02-login.png)
 
----
 
 # Step 3 – Exploring the Dashboard
 
@@ -81,7 +76,6 @@ The dashboard provides a centralized view of campaigns, users, templates, landin
 
 ![Dashboard](screenshots/03-dashboard.png)
 
----
 
 # Step 4 – Reviewing Sending Profile Configuration
 
@@ -98,7 +92,6 @@ This phase explored how GoPhish manages outbound email settings used during awar
 
 ![Sending Profile](screenshots/04-sending-profile.png)
 
----
 
 # Step 5 – Email Template Management
 
@@ -115,7 +108,6 @@ GoPhish supports reusable email templates for awareness campaigns.
 
 ![Email Templates](screenshots/05-template.png)
 
----
 
 # Step 6 – Landing Page Management
 
@@ -132,7 +124,6 @@ Landing pages are used to simulate websites for awareness exercises and training
 
 ![Landing Page](screenshots/06-landing-page.png)
 
----
 
 # Step 7 – Target Group Administration
 
@@ -149,7 +140,6 @@ This section explored how users can be organized into groups for awareness campa
 
 ![Target Groups](screenshots/07-target-group.png)
 
----
 
 # Step 8 – Campaign Creation Workflow
 
@@ -166,7 +156,6 @@ The campaign interface combines templates, target groups, and landing pages into
 
 ![Campaign Creation](screenshots/08-campaign.png)
 
----
 
 # Step 9 – Monitoring Results
 
@@ -184,7 +173,6 @@ GoPhish provides reporting tools that allow administrators to analyze awareness-
 
 ![Results Dashboard](screenshots/09-results.png)
 
----
 
 # Key Takeaways
 
@@ -198,8 +186,7 @@ Through this project I gained practical experience with:
 
 The lab provided insight into how organizations conduct phishing-awareness training programs and evaluate employee security awareness levels.
 
----
 
-# Disclaimer
+# ⚠️ Disclaimer
 
 This repository is intended solely for cybersecurity education, research, and defensive security awareness training. Activities were conducted only within a controlled laboratory environment using systems and accounts for which authorization was granted.
