@@ -66,11 +66,11 @@ and saved as an executable file for the isolated lab environment.
 
 Changed directory to var/www/html and moved the payload to this directory
 
-![var/www/html](Lab1-screenshots/var-www-html.png)
+![var/www/html](Lab1-screenshots/var_www_html.png)
 
-![mv payload](Lab1-screenshots/mv-payload.png)
+![mv payload](Lab1-screenshots/mv_payload.png)
 
-![ls var/www/html](Lab1-screenshots/mv-payload-test.png)
+![ls var/www/html](Lab1-screenshots/mvpayload_test.png)
 
 ## Step 2 - Apache2 Web Server Setup
 
@@ -86,9 +86,9 @@ This allowed the payload file to be hosted locally through the Apache web server
 
 After that moved the payload executable file to this directory
 
-![Apache status](Lab1-screenshots/Apache-start.png)
+![Apache status](Lab1-screenshots/Apache_start.png)
 
-![Apache server](Lab1-screenshots/Apache-server.png)
+![Apache server](Lab1-screenshots/Apache_server.png)
 
 ## Step 3 - Configured Metasploit Listener
 
@@ -115,7 +115,7 @@ Started the listener and waited for the reverse connection from the Windows Mach
 
 ![msfconsole](Lab1-screenshots/msfconsole.png)
 
-![msfconsole setup](Lab1-screenshots/msfconsole-setup.png)
+![msfconsole setup](Lab1-screenshots/msfconsole_setup.png)
 
 ## Step 4 - Post Exploitation Enumeration
 
@@ -128,7 +128,7 @@ After establishing the Meterpreter session, several commands were used to gather
 | getuid | identify targets current user context |
 | ps | list targets running processes |
 
-![sysinfo](Lab1-screenshots/target-sysinfo.png)
+![sysinfo](Lab1-screenshots/target_sysinfo.png)
 
 ### Privilege Escalation Demonstration
 
