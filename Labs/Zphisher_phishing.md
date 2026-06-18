@@ -167,29 +167,21 @@ Once victims enters the credentials it will redirect to the legitimate website t
 
 This exercise highlighted several risks:
 
-Users often trust pages that visually resemble legitimate websites.
-
-Automatic redirection can reduce suspicion.
-
-Users may not verify URLs before entering credentials.
-
-Social engineering techniques can increase the success rate of phishing attacks.
+* Users often trust pages that visually resemble legitimate websites.
+* Automatic redirection can reduce suspicion.
+* Users may not verify URLs before entering credentials.
+* Social engineering techniques can increase the success rate of phishing attacks.
 
 ## Detection and Prevention
 
 To reduce phishing risk:
 
-Verify URLs before entering credentials.
-
-Check the domain name carefully.
-
-Avoid clicking unexpected links received through email or messaging platforms.
-
-Enable Multi-Factor Authentication (MFA).
-
-Use password managers that verify domains automatically.
-
-Report suspicious websites to security teams.
+* Verify URLs before entering credentials.
+* Check the domain name carefully.
+* Avoid clicking unexpected links received through email or messaging platforms.
+* Enable Multi-Factor Authentication (MFA).
+* Use password managers that verify domains automatically.
+* Report suspicious websites to security teams.
 
 ### URL Verification Resources
 
