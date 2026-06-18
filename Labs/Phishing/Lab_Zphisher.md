@@ -63,15 +63,15 @@ During the lab, Zphisher framework was observed to understand the typical steps 
 * After credentials were entered the user was redirected to the legitimate website, which could reduce suspicion and make the phishing attempt less noticeable
 * This demonstrates how attackers may attempt to collect credentials while maintaining the appearance of a normal login process.
 
-![Clone Zphisher](Zphisher_screenshots/clone.png)
+![Clone Zphisher](Lab_Zphisher_screenshots/clone.png)
 
-![Bash Zphisher](Zphisher_screenshots/bash.png)
+![Bash Zphisher](Lab_Zphisher_screenshots/bash.png)
 
-![Zphisher](Zphisher_screenshots/zphisher.png)
+![Zphisher](Lab_Zphisher_screenshots/zphisher.png)
 
-![host](Zphisher_screenshots/host.png)
+![host](Lab_Zphisher_screenshots/host.png)
 
-![hosted](Zphisher_screenshots/hosted.png)
+![hosted](Lab_Zphisher_screenshots/hosted.png)
 
 # Scenario 1 – Local Environment Demonstration
 
@@ -90,13 +90,13 @@ To understand how credential harvesting works in a safe and isolated environment
 
 Screenshots
 
-![fake insta](Zphisher_screenshots/fake_insta.png)
+![fake insta](Lab_Zphisher_screenshots/fake_insta.png)
 
 After Victim enters their credentials the page would redirect to the legtimate platform of the website to avoid suspicion
 
-![real insta](Zphisher_screenshots/real_insta.png)
+![real insta](Lab_Zphisher_screenshots/real_insta.png)
 
-![credentials](Zphisher_screenshots/victim_credentials.png)
+![credentials](Lab_Zphisher_screenshots/victim_credentials.png)
 
 # Scenario 2 – External Access Demonstration
 
@@ -146,22 +146,22 @@ User should never trust a website solely because it loads correctly or resembles
 
 Screenshots
 
-![cloudflare](Zphisher_screenshots/cloudflare.png)
+![cloudflare](Lab_Zphisher_screenshots/cloudflare.png)
 
-![mask url](Zphisher_screenshots/mask.png)
+![mask url](Lab_Zphisher_screenshots/mask.png)
 
-![URL](Zphisher_screenshots/cloudflare_url.png)
+![URL](Lab_Zphisher_screenshots/cloudflare_url.png)
 
 
 After the URL is sent to victim it will direct to a fake website for credentials
 
-![fake PS](Zphisher_screenshots/fake_PS.png)
+![fake PS](Lab_Zphisher_screenshots/fake_PS.png)
 
 Once victims enters the credentials it will redirect to the legitimate website to avoid suspicion
 
-![Real PS](Zphisher_screenshots/real_PS.png)
+![Real PS](Lab_Zphisher_screenshots/real_PS.png)
 
-![cred](Zphisher_screenshots/victim_cred.png)
+![cred](Lab_Zphisher_screenshots/victim_cred.png)
 
 ### Security Risks Identified
 
