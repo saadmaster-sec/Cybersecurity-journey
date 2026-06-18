@@ -67,7 +67,7 @@ OpenSSH Server
 
 
 
-![OpenSSH Installation](SSH_screenshots/SSH.png)
+![OpenSSH Installation](Lab_screenshots/SSH.png)
 
 # Step 2: Configure SSH Service
 
@@ -99,7 +99,7 @@ Manual → Automatic
 
 6. Start the service
 
-![SSH Service](SSH_screenshots/SSH_Status.png)
+![SSH Service](Lab_screenshots/SSH_Status.png)
 
 **At this point, OpenSSH Server had been installed and the SSH service was configured to start automatically. However, when attempting to connect from Kali Linux, the SSH connection would time out without displaying a password prompt.**
 
@@ -120,7 +120,7 @@ TCP    0.0.0.0:22      LISTENING
 TCP    [::]:22         LISTENING
 ```
 
-![TCP](SSH_screenshots/Listen.png)
+![TCP](Lab_screenshots/Listen.png)
 
 # Step 4: Verify Firewall Rule
 
@@ -137,7 +137,7 @@ OpenSSH SSH Server (sshd)
 Enabled : True
 ```
 
-![Firewall](SSH_screenshots/Firewall.png)
+![Firewall](Lab_screenshots/Firewall.png)
 
 # Step 5: Verify Network Connectivity
 
@@ -155,7 +155,7 @@ Initial Result:
 
 This indicated that the issue was not SSH itself but network communication.
 
-![No connection](SSH_screenshots/No_Connection.png)
+![No connection](Lab_screenshots/No_Connection.png)
 
 # Troubleshooting Process
 
@@ -239,13 +239,13 @@ Result:
 0% packet loss
 ```
 
-![Firewall](SSH_screenshots/Firewall.png)
+![Firewall](Lab_screenshots/Firewall.png)
 
 SSH immediately progressed to authentication.
 
 ### Screenshot
 
-![ping success](SSH_screenshots/ping_success.png)
+![ping success](Lab_screenshots/ping_success.png)
 
 # Authentication Issue
 
@@ -292,7 +292,7 @@ Microsoft Windows [Version 10.0.xxxxx]
 sshtest@SAAD C:\Users\sshtest>
 ```
 
-![SSH session](SSH_screenshots/SSH_session.png)
+![SSH session](Lab_screenshots/SSH_session.png)
 
 # Lessons Learned
 
