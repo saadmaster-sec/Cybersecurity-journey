@@ -29,8 +29,8 @@ The purpose of this lab was to:
 * Web Browser
 * URL Analysis Platforms:
 ```text
- VirusTotal
- Hybrid Analysis
+VirusTotal
+Hybrid Analysis
 MetaDefender
 ```
 
