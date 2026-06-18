@@ -98,8 +98,6 @@ After Victim enters their credentials the page would redirect to the legtimate p
 
 ![credentials](Zphisher_screenshots/victim_credentials.png)
 
-[Insert Screenshot 3 – Demonstration Output Showing Captured Test Credentials]
-
 # Scenario 2 – External Access Demonstration
 
 A second demonstration was performed using an externally accessible hosting option.
@@ -150,9 +148,10 @@ Screenshots
 
 ![cloudflare](Zphisher_screenshots/cloudflare.png)
 
+![mask url](Zphisher_screenshots/mask.png)
+
 ![URL](Zphisher_screenshots/cloudflare_url.png)
 
-![mask url](Zphisher_screenshots/mask.png)
 
 After the URL is sent to victim it will direct to a fake website for credentials
 
