@@ -61,7 +61,7 @@ The payload was configured with:
 
 and saved as an executable file for the isolated lab environment.
 
-![Payload Creation](Metasploit/Lab1_screenshots/payload_creation.png)
+![Payload Creation](Lab1_screenshots/payload_creation.png)
 
 
 Changed directory to var/www/html and moved the payload to this directory
