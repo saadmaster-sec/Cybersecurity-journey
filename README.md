@@ -2,7 +2,7 @@
     My cybersecurity learning journey: labs, notes, and projects
 # Cybersecurity Journey
 
-Hi, I'm Mohamed, an aspiring Cyberseurity Analyst currently building hands-on security projects and developing practical skills in blue team operations, security monitoring, and threat detection.
+Hi, I'm Mohamed, an aspiring Cybersecurity Analyst currently building hands-on security projects and developing practical skills in blue team operations, security monitoring, and threat detection.
 
 I am continuously expanding my knowledge through labs, projects, certifications and self-study while working toward a career in cybersecurity.
 
@@ -48,7 +48,7 @@ This repository contains:
 
 - Lab Notes
 - Project Documentation
-- Learning Progrees
+- Learning Progress
 - Security Concepts
 - Technical Write-ups
 I document everything I learn during my course.
@@ -57,7 +57,7 @@ I document everything I learn during my course.
 
 To build a successful career in cybersecurity and secure a Security Operations Centre (SOC) or Cybersecurity Analyst role while continuing to develop advanced defensive security skills.
 
-### Connect with me on Linkdin 
+### Connect with me on LinkdIn 
 
 https://www.linkedin.com/in/mohamedmaster
 
