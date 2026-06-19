@@ -185,6 +185,8 @@ The sending profile was configured to use smtp.gmail.com:587. The hostname smtp.
 
 Landing pages are used to simulate websites for awareness exercises and training demonstrations.
 
+This captures the credentials of the user.
+
 ### Concepts Studied
 
 * Landing page creation
@@ -233,9 +235,25 @@ And we will copy the whole code
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/redirect.png)
 
+![GoPhish Startup](Lab_GoPhish_screenshots/Landing_page.png)
+
 # Step 7 – Email Template Management
 
 GoPhish supports reusable email templates for awareness campaigns.
+
+Prior to creating the email template, an existing email related to Two-Step Verification was reviewed to understand how email content and formatting are structured.
+
+Activities Performed
+
+* Opened a previously received Two-Step Verification email.
+* Selected the three-dot menu within the email interface.
+* Chose the "Show Original" option.
+* Reviewed the raw email information, including headers and message content.
+* Used the "Copy to Clipboard" feature to copy the original email source for analysis.
+
+Purpose
+
+The purpose of this step was to examine how a legitimate email is formatted and transmitted. Viewing the original message provides access to technical details such as email headers, sender information, routing data, and the HTML content of the message.
 
 ### Concepts Studied
 
