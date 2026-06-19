@@ -45,6 +45,7 @@ The first stage involved starting the GoPhish application and verifying that all
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/gophish_start.png)
 
+![GoPhish Startup](Lab_GoPhish_screenshots/gophish_cred.png)
 
 # Step 2 – Accessing the Administration Interface
 
@@ -59,7 +60,11 @@ After startup, the administrative web interface was accessed through the browser
 
 ### Screenshot
 
-![Admin Login](screenshots/02-login.png)
+![GoPhish Startup](Lab_GoPhish_screenshots/gophish_warn.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/sign_in.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/reset_pass.png)
 
 
 # Step 3 – Exploring the Dashboard
@@ -75,10 +80,34 @@ The dashboard provides a centralized view of campaigns, users, templates, landin
 
 ### Screenshot
 
-![Dashboard](screenshots/03-dashboard.png)
+![GoPhish Startup](Lab_GoPhish_screenshots/Sending_profile.png)
 
+# Step 4 – Preparing a Dedicated Test Email Account
 
-# Step 4 – Reviewing Sending Profile Configuration
+Before configuring email delivery settings, a separate Gmail account was created specifically for laboratory testing purposes. Using a dedicated account helps isolate testing activities from personal or primary email accounts.
+
+### Activities Performed
+
+* Created a test Gmail account named cyberkiddie0@gmail.com
+* Logged into the Google Account management portal
+* Navigated to Security → App Passwords
+* Generated an application-specific password for GoPhish
+* Assigned the app password the name "GoPhish"
+* Saved the generated password for later use in the GoPhish sending profile configuration
+
+### Purpose
+
+The generated app password allows GoPhish to authenticate with Gmail's SMTP service without using the account's primary password. This approach is commonly used when integrating third-party applications with Gmail.
+
+### Screenshot
+
+![GoPhish Startup](Lab_GoPhish_screenshots/test_gmail.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/gmail_management.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/app_passwords.png)
+
+# Step 5 – Reviewing Sending Profile Configuration
 
 This phase explored how GoPhish manages outbound email settings used during awareness simulations.
 
@@ -91,24 +120,11 @@ This phase explored how GoPhish manages outbound email settings used during awar
 
 ### Screenshot
 
-![Sending Profile](screenshots/04-sending-profile.png)
+![GoPhish Startup](Lab_GoPhish_screenshots/new_sending.png)
 
+![GoPhish Startup](Lab_GoPhish_screenshots/send_test_email.png)
 
-# Step 5 – Email Template Management
-
-GoPhish supports reusable email templates for awareness campaigns.
-
-### Concepts Studied
-
-* Template creation
-* HTML email structure
-* Template imports
-* Preview functionality
-
-### Screenshot
-
-![Email Templates](screenshots/05-template.png)
-
+![GoPhish Startup](Lab_GoPhish_screenshots/Send_test_email1.png)
 
 # Step 6 – Landing Page Management
 
@@ -125,8 +141,27 @@ Landing pages are used to simulate websites for awareness exercises and training
 
 ![Landing Page](screenshots/06-landing-page.png)
 
+# Step 7 – Email Template Management
 
-# Step 7 – Target Group Administration
+GoPhish supports reusable email templates for awareness campaigns.
+
+### Concepts Studied
+
+* Template creation
+* HTML email structure
+* Template imports
+* Preview functionality
+
+### Screenshot
+
+![GoPhish Startup](Lab_GoPhish_screenshots/email_temp.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/show_og.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/og.png)
+
+
+# Step 8 – Target Group Administration
 
 This section explored how users can be organized into groups for awareness campaigns.
 
@@ -142,7 +177,7 @@ This section explored how users can be organized into groups for awareness campa
 ![Target Groups](screenshots/07-target-group.png)
 
 
-# Step 8 – Campaign Creation Workflow
+# Step 9 – Campaign Creation Workflow
 
 The campaign interface combines templates, target groups, and landing pages into a complete awareness-training exercise.
 
@@ -158,7 +193,7 @@ The campaign interface combines templates, target groups, and landing pages into
 ![Campaign Creation](screenshots/08-campaign.png)
 
 
-# Step 9 – Monitoring Results
+# Step 10 – Monitoring Results
 
 GoPhish provides reporting tools that allow administrators to analyze awareness-training outcomes.
 
