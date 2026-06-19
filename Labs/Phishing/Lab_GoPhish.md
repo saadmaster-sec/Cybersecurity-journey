@@ -111,15 +111,24 @@ During the setup process:
 
 The App Password acts as a special authentication token between GoPhish and Gmail.
 
-GoPhish
-   │
-   ├─ Connects to smtp.gmail.com:587
-   │
-   ├─ Uses cyberkiddie0@gmail.com as the username
-   │
-   ├─ Uses the generated App Password as the password
-   │
-   └─ Gmail verifies the credentials and allows email transmission
+```mermaid
+sequenceDiagram
+    participant G as GoPhish
+    participant S as smtp.gmail.com:587
+    participant M as Gmail Server
+
+    G->>S: Connect to SMTP Server
+    S-->>G: Connection Established
+
+    G->>M: Username (cyberkiddie0@gmail.com)
+    G->>M: App Password
+
+    M-->>G: Authentication Successful
+
+    G->>M: Send Email Request
+    M-->>G: Email Accepted and Delivered
+```
+
 
 Using an App Password provides better security because the actual Gmail account password is never shared with the application. If necessary, the App Password can be revoked independently without affecting access to the Gmail account itself.
 
