@@ -192,21 +192,6 @@ Landing pages are used to simulate websites for awareness exercises and training
 * User interaction tracking
 * Template editing
 
-### Screenshot
-
-![GoPhish Startup](Lab_GoPhish_screenshots/.png)
-
-# Step 7 – Email Template Management
-
-GoPhish supports reusable email templates for awareness campaigns.
-
-### Concepts Studied
-
-* Template creation
-* HTML email structure
-* Template imports
-* Preview functionality
-
 Accessing the Google HTML Template Directory
 
 During the lab, the following command was used:
@@ -232,6 +217,23 @@ The purpose of navigating to this directory was to locate the HTML template file
 Learning Outcome
 
 This step demonstrated how Linux applications organize resources within the filesystem and how web templates are stored as HTML files inside application directories. It also provided practical experience navigating the Linux directory structure using terminal commands.
+
+### Screenshot
+
+![GoPhish Startup](Lab_GoPhish_screenshots/.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/google_template.png)
+
+# Step 7 – Email Template Management
+
+GoPhish supports reusable email templates for awareness campaigns.
+
+### Concepts Studied
+
+* Template creation
+* HTML email structure
+* Template imports
+* Preview functionality
 
 ### Screenshot
 
