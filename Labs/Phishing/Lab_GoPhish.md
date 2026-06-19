@@ -122,6 +122,23 @@ This phase explored how GoPhish manages outbound email settings used during awar
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/new_sending.png)
 
+## Why Not Port 25?
+
+Port 25 is the original SMTP port.
+
+However, many ISPs and cloud providers block it because it is commonly abused by spam bots.
+
+Therefore modern email clients usually use:
+
+587 → SMTP + STARTTLS (recommended)
+465 → SMTP over SSL/TLS
+
+Google recommends 587 for email submission.
+
+The sending profile was configured to use smtp.gmail.com:587. The hostname smtp.gmail.com refers to Gmail's SMTP server, which is responsible for transmitting outgoing email messages. Port 587 is the standard SMTP submission port and supports secure email transmission using STARTTLS encryption. GoPhish authenticated to Gmail using an App Password and then relayed emails through Gmail's SMTP infrastructure.
+
+
+
 ![GoPhish Startup](Lab_GoPhish_screenshots/send_test_email.png)
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/Send_test_email1.png)
