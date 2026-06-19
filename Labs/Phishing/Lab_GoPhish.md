@@ -45,7 +45,7 @@ The first stage involved starting the GoPhish application and verifying that all
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/gophish_start.png)
 
-![GoPhish Startup](Lab_GoPhish_screenshots/gophish_cred.png)
+```![GoPhish Startup](Lab_GoPhish_screenshots/gophish_cred.png) ```
 
 # Step 2 – Accessing the Administration Interface
 
@@ -158,7 +158,7 @@ GoPhish supports reusable email templates for awareness campaigns.
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/show_og.png)
 
-![GoPhish Startup](Lab_GoPhish_screenshots/og.png)
+```![GoPhish Startup](Lab_GoPhish_screenshots/og.png)```
 
 
 # Step 8 – Target Group Administration
