@@ -174,11 +174,13 @@ Google recommends 587 for email submission.
 
 The sending profile was configured to use smtp.gmail.com:587. The hostname smtp.gmail.com refers to Gmail's SMTP server, which is responsible for transmitting outgoing email messages. Port 587 is the standard SMTP submission port and supports secure email transmission using STARTTLS encryption. GoPhish authenticated to Gmail using an App Password and then relayed emails through Gmail's SMTP infrastructure.
 
-
-
 ![GoPhish Startup](Lab_GoPhish_screenshots/send_test_email.png)
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/Send_test_email1.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/email_works.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/email_works1.png)
 
 # Step 6 – Landing Page Management
 
