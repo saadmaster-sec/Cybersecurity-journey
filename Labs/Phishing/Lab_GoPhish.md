@@ -41,8 +41,9 @@ The first stage involved starting the GoPhish application and verifying that all
 * Verified management interface availability
 
 ### Screenshot
+![GoPhish Startup](Lab_GoPhish_screenshots/gophish_app.png)
 
-![GoPhish Startup](screenshots/01-startup.png)
+![GoPhish Startup](Lab_GoPhish_screenshots/gophish_start.png)
 
 
 # Step 2 – Accessing the Administration Interface
