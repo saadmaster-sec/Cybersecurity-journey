@@ -270,6 +270,10 @@ The purpose of this step was to examine how a legitimate email is formatted and 
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/Og.png)
 
+![GoPhish Startup](Lab_GoPhish_screenshots/google_temp.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/import_email.png)
+
 
 # Step 8 – Target Group Administration
 
