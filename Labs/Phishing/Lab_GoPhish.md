@@ -220,9 +220,18 @@ This step demonstrated how Linux applications organize resources within the file
 
 ### Screenshot
 
-![GoPhish Startup](Lab_GoPhish_screenshots/.png)
-
 ![GoPhish Startup](Lab_GoPhish_screenshots/google_template.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/google_resemble.png)
+
+```text
+We will right-click on this page and go to view page source
+```
+![GoPhish Startup](Lab_GoPhish_screenshots/google_page_code.png)
+
+And we will copy the whole code
+
+![GoPhish Startup](Lab_GoPhish_screenshots/redirect.png)
 
 # Step 7 – Email Template Management
 
