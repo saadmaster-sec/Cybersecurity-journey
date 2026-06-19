@@ -214,7 +214,7 @@ During the lab, the following command was used:
 cd /usr/share/set/src/html/templates/google
 
 What Each Directory Represents
-```text
+
 |Directory | Purpose|
 |---|---|
 |/usr |	Stores user applications and shared resources|
@@ -224,7 +224,7 @@ What Each Directory Represents
 |html |	HTML content used by the toolkit|
 |templates | Collection of web page templates|
 |google | Template files associated with a Google-style login page|
-```
+
 Why This Directory Was Accessed
 
 The purpose of navigating to this directory was to locate the HTML template files stored by the toolkit. These files contain the web page structure, styling, and resources that can be viewed, examined, or imported into another application for testing and educational purposes within the laboratory environment.
