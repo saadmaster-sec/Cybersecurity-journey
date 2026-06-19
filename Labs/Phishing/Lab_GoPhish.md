@@ -327,6 +327,10 @@ The campaign interface combines templates, target groups, and landing pages into
 
 ![GoPhish Startup](Lab_GoPhish_screenshots/campaign.png)
 
+```text
+The URL is http://IP Address of the machine that is hosting Gophish
+```
+
 ![GoPhish Startup](Lab_GoPhish_screenshots/Campaign_schedule.png)
 
 # Step 10 – Monitoring Results
@@ -343,8 +347,17 @@ GoPhish provides reporting tools that allow administrators to analyze awareness-
 
 ### Screenshot
 
-![Results Dashboard](screenshots/09-results.png)
+![GoPhish Startup](Lab_GoPhish_screenshots/result_campaign.png)
 
+![GoPhish Startup](Lab_GoPhish_screenshots/phish_email.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/phishing_page.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/details.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/timeline.png)
+
+![GoPhish Startup](Lab_GoPhish_screenshots/victim_cred.png)
 
 # Key Takeaways
 
