@@ -279,6 +279,27 @@ The purpose of this step was to examine how a legitimate email is formatted and 
 
 This section explored how users can be organized into groups for awareness campaigns.
 
+In this step, a target group was created by adding recipient information that would be used during the awareness campaign.
+
+Activities Performed
+
+* Navigated to the Users & Groups section.
+* Created a new target group.
+* Added a target email address manually.
+* Saved the group for later use in the campaign configuration.
+* Bulk Import Option
+
+GoPhish also provides a Bulk Import Users feature. Instead of entering recipients one at a time, administrators can import multiple users from a CSV file containing information such as:
+
+```text
+First Name
+Last Name
+Email Address
+Position (optional)
+```
+
+This feature is useful when managing larger groups of recipients.
+
 ### Concepts Studied
 
 * User grouping
@@ -288,7 +309,7 @@ This section explored how users can be organized into groups for awareness campa
 
 ### Screenshot
 
-![Target Groups](screenshots/07-target-group.png)
+![GoPhish Startup](Lab_GoPhish_screenshots/group.png)
 
 
 # Step 9 – Campaign Creation Workflow
@@ -304,8 +325,9 @@ The campaign interface combines templates, target groups, and landing pages into
 
 ### Screenshot
 
-![Campaign Creation](screenshots/08-campaign.png)
+![GoPhish Startup](Lab_GoPhish_screenshots/campaign.png)
 
+![GoPhish Startup](Lab_GoPhish_screenshots/Campaign_schedule.png)
 
 # Step 10 – Monitoring Results
 
