@@ -129,7 +129,6 @@ sequenceDiagram
     M-->>G: Email Accepted and Delivered
 ```
 
-
 Using an App Password provides better security because the actual Gmail account password is never shared with the application. If necessary, the App Password can be revoked independently without affecting access to the Gmail account itself.
 
 ### Purpose
@@ -195,7 +194,7 @@ Landing pages are used to simulate websites for awareness exercises and training
 
 ### Screenshot
 
-![Landing Page](screenshots/06-landing-page.png)
+![GoPhish Startup](Lab_GoPhish_screenshots/.png)
 
 # Step 7 – Email Template Management
 
@@ -207,6 +206,32 @@ GoPhish supports reusable email templates for awareness campaigns.
 * HTML email structure
 * Template imports
 * Preview functionality
+
+Accessing the Google HTML Template Directory
+
+During the lab, the following command was used:
+
+cd /usr/share/set/src/html/templates/google
+
+What Each Directory Represents
+```text
+|Directory | Purpose|
+|---|---|
+|/usr |	Stores user applications and shared resources|
+|/usr/share | Contains shared application files|
+|set |	Files related to the Social-Engineer Toolkit (SET)|
+|src |	Source files used by the application|
+|html |	HTML content used by the toolkit|
+|templates | Collection of web page templates|
+|google | Template files associated with a Google-style login page|
+```
+Why This Directory Was Accessed
+
+The purpose of navigating to this directory was to locate the HTML template files stored by the toolkit. These files contain the web page structure, styling, and resources that can be viewed, examined, or imported into another application for testing and educational purposes within the laboratory environment.
+
+Learning Outcome
+
+This step demonstrated how Linux applications organize resources within the filesystem and how web templates are stored as HTML files inside application directories. It also provided practical experience navigating the Linux directory structure using terminal commands.
 
 ### Screenshot
 
