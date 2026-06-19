@@ -95,6 +95,34 @@ Before configuring email delivery settings, a separate Gmail account was created
 * Assigned the app password the name "GoPhish"
 * Saved the generated password for later use in the GoPhish sending profile configuration
 
+## Why an App Password Was Used
+
+Google does not allow many third-party applications to authenticate using a Gmail account's regular password. To securely connect GoPhish to Gmail, an App Password was generated from the Google Account security settings.
+
+During the setup process:
+
+* A dedicated Gmail account (cyberkiddie0@gmail.com) was created for testing.
+* Two-Step Verification was enabled on the account.
+* An App Password named "GoPhish" was generated.
+* Google automatically created a unique 16-character password.
+* This generated password was copied and entered into the GoPhish Sending Profile instead of the normal Gmail password.
+
+### How It Works
+
+The App Password acts as a special authentication token between GoPhish and Gmail.
+
+GoPhish
+   │
+   ├─ Connects to smtp.gmail.com:587
+   │
+   ├─ Uses cyberkiddie0@gmail.com as the username
+   │
+   ├─ Uses the generated App Password as the password
+   │
+   └─ Gmail verifies the credentials and allows email transmission
+
+Using an App Password provides better security because the actual Gmail account password is never shared with the application. If necessary, the App Password can be revoked independently without affecting access to the Gmail account itself.
+
 ### Purpose
 
 The generated app password allows GoPhish to authenticate with Gmail's SMTP service without using the account's primary password. This approach is commonly used when integrating third-party applications with Gmail.
