@@ -48,9 +48,10 @@ An IPv4 address contains:
 ```mermaid
 flowchart LR
 A[Network Portion] --> B[Host Portion]
-Network Portion → Identifies the network
-Host Portion → Identifies the device
 ```
+* Network Portion → Identifies the network
+* Host Portion → Identifies the device
+
 ## Subnet Mask
 
 A subnet mask separates the network portion from the host portion.
