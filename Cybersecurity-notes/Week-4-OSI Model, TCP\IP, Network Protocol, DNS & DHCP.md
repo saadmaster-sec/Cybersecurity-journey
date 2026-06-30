@@ -90,7 +90,7 @@ A --> B --> C --> D
 
 ## OSI vs TCP/IP
 
-|OSI	TCP/IP|
+|OSI|	TCP/IP|
 |---|---|
 |7 Layers|	4 Layers|
 |Theoretical|	Practical|
