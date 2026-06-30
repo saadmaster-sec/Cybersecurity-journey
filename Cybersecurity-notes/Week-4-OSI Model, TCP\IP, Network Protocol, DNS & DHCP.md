@@ -195,7 +195,7 @@ Common Records:
 |CNAME	|Alias|
 |MX	|Mail Server|
 |NS	|Name Server|
-|TXT	Text Information|
+|TXT	|Text Information|
 
 ## DNS Resolution Process
 ```mermaid
