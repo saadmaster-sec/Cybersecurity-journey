@@ -1,18 +1,30 @@
-How The Web Works — TryHackMe Notes
+# How The Web Works — TryHackMe Notes
+
 Module: Pre-Security Path → How The Web Works
+
 Rooms covered: DNS in Detail · HTTP in Detail · How Websites Work · Putting It All Together
 
-1. DNS in Detail
-What DNS does
+## 1. DNS in Detail
+
+### What DNS does
+
 Every device on the internet has a unique IP address (e.g. 104.26.10.229), but remembering strings of numbers for every site you visit isn't practical. The Domain Name System (DNS) maps human-readable domain names (google.com) to machine-readable IP addresses, the same way a postal address lets you find a house without knowing its GPS coordinates.
-Domain name anatomy
-PartExampleNotesTLD (Top Level Domain).com in tryhackme.comRight-most part of the domain. Split into gTLD (generic, e.g. .com, .org) and ccTLD (country code, e.g. .uk, .de).SLD (Second Level Domain)tryhackme in tryhackme.comMax 63 characters, a-z, 0-9, hyphens (can't start/end with a hyphen or have consecutive hyphens).Subdomainadmin in admin.tryhackme.comSits left of the SLD. Same character rules as SLD. Multiple subdomains can be chained (jupiter.servers.tryhackme.com), total length capped at 253 characters.
+
+### Domain name anatomy
+
+|Part | Example | NotesTLD|
+|---|---|---|
+|(Top Level Domain) |.com in tryhackme.com | Right-most part of the domain. Split into gTLD (generic, e.g. .com, .org) and ccTLD (country code, e.g. .uk, .de).| 
+|SLD (Second Level Domain)| tryhackme in tryhackme.com | Max 63 characters, a-z, 0-9, hyphens (can't start/end with a hyphen or have consecutive hyphens).| 
+|Subdomainadmin | in admin.tryhackme.com | Sits left of the SLD. Same character rules as SLD. Multiple subdomains can be chained (jupiter.servers.tryhackme.com), total length capped at 253 characters.|
+```
 mermaidflowchart LR
     A["admin . tryhackme . com"] --> B["Subdomain: admin"]
     A --> C["SLD: tryhackme"]
     A --> D["TLD: .com"]
     D --> E["gTLD — generic, e.g. .com / .org"]
     D --> F["ccTLD — country code, e.g. .uk / .de"]
+```
 How a DNS lookup works (step by step)
 
 Your computer checks its local DNS cache first — if you've visited the site recently, it may already know the IP.
