@@ -151,41 +151,161 @@ Common Uses:
 |POP3	|Download Email	|110|
 |IMAP	|Synchronize Email	|143|
 
-Remote Access
-Protocol	Purpose	Port
-Telnet	Remote Login (Insecure)	23
-SSH	Secure Remote Login	22
-RDP	Remote Desktop	3389
+### Remote Access
 
-Network Management
-Protocol	Purpose	Port
-SNMP	Monitor Devices	161
-NTP	Time Synchronization	123
+|Protocol	|Purpose	|Port|
+|---|---|---|
+|Telnet	|Remote Login (Insecure)	|23|
+|SSH	|Secure Remote Login	|22|
+|RDP	|Remote Desktop	|3389|
 
-File Sharing
-Protocol	Purpose	Port
-SMB	Windows File Sharing	445
+### Network Management
 
-DNS (Domain Name System)
+|Protocol	|Purpose	|Port|
+|---|---|---|
+|SNMP|	Monitor Devices	|161|
+|NTP|	Time Synchronization	|123|
+
+### File Sharing
+
+|Protocol	|Purpose	|Port|
+|---|---|---|
+|SMB	|Windows File Sharing	|445|
+
+## DNS (Domain Name System)
 
 DNS converts human-readable domain names into IP addresses.
 
 Example:
-
+```text
 google.com → 142.250.183.46
-DNS Components
-DNS Resolver
-DNS Server
-DNS Records
+```
+### DNS Components
+
+* DNS Resolver
+* DNS Server
+* DNS Records
 
 Common Records:
 
-Record	Purpose
-A	Domain → IPv4
-AAAA	Domain → IPv6
-CNAME	Alias
-MX	Mail Server
-NS	Name Server
-TXT	Text Information
+|Record	|Purpose|
+|---|---|
+|A	|Domain → IPv4|
+|AAAA	|Domain → IPv6|
+|CNAME	|Alias|
+|MX	|Mail Server|
+|NS	|Name Server|
+|TXT	Text Information|
 
-DNS Resolution Process
+## DNS Resolution Process
+```mermaid
+flowchart LR
+
+A[User enters domain]
+--> B[DNS Resolver]
+--> C[Root Server]
+--> D[TLD Server]
+--> E[Authoritative DNS Server]
+--> F[IP Address Returned]
+--> G[Website Opens]
+```
+### DNS Port
+```text
+Port 53
+```
+
+Uses:
+
+* UDP (Most Queries)
+* TCP (Large Responses)
+
+## DHCP (Dynamic Host Configuration Protocol)
+
+DHCP automatically assigns network settings to devices joining a network.
+
+DHCP provides:
+
+* IP Address
+* Subnet Mask
+* Default Gateway
+* DNS Server
+
+## DHCP Components
+
+### DHCP Server
+
+Assigns IP addresses.
+
+### DHCP Client
+
+Requests IP addresses.
+
+Examples:
+
+* Laptop
+* Phone
+* Printer
+
+ ### IP Pool
+
+Available addresses for assignment.
+
+Example:
+```text
+192.168.1.100 - 192.168.1.200
+```
+
+## DHCP DORA Process
+
+The DHCP process follows DORA:
+```mermaid
+sequenceDiagram
+    Client->>Server: Discover
+    Server->>Client: Offer
+    Client->>Server: Request
+    Server->>Client: Acknowledge
+```
+
+### DORA
+
+* D = Discover
+* O = Offer
+* R = Request
+* A = Acknowledge
+
+## DHCP Ports
+
+|Device|	Port|
+|---|---|
+|DHCP Server|	67|
+|DHCP Client|	68|
+
+Uses UDP.
+
+### Cybersecurity Notes
+
+|Attack|	Layer|
+|ARP Spoofing|	Layer 2|
+|DDoS|	Layer 4|
+|Phishing|	Layer 7|
+|DNS Poisoning|	DNS/Application|
+
+Understanding the OSI model helps security professionals identify where attacks occur and how to investigate them.
+
+## Protocols to Memorize
+```text
+HTTP  = 80
+HTTPS = 443
+FTP   = 21
+SSH   = 22
+Telnet= 23
+SMTP  = 25 / 587
+DNS   = 53
+DHCP  = 67 / 68
+POP3  = 110
+NTP   = 123
+IMAP  = 143
+SNMP  = 161
+SMB   = 445
+RDP   = 3389
+```
