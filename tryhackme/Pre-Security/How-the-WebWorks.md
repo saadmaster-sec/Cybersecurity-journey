@@ -17,8 +17,8 @@ Every device on the internet has a unique IP address (e.g. 104.26.10.229), but r
 |(Top Level Domain) |.com in tryhackme.com | Right-most part of the domain. Split into gTLD (generic, e.g. .com, .org) and ccTLD (country code, e.g. .uk, .de).| 
 |SLD (Second Level Domain)| tryhackme in tryhackme.com | Max 63 characters, a-z, 0-9, hyphens (can't start/end with a hyphen or have consecutive hyphens).| 
 |Subdomainadmin | in admin.tryhackme.com | Sits left of the SLD. Same character rules as SLD. Multiple subdomains can be chained (jupiter.servers.tryhackme.com), total length capped at 253 characters.|
-```
-mermaidflowchart LR
+```mermaid
+flowchart LR
     A["admin . tryhackme . com"] --> B["Subdomain: admin"]
     A --> C["SLD: tryhackme"]
     A --> D["TLD: .com"]
