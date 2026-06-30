@@ -312,3 +312,36 @@ Traceroute = Path Discovery
 Netstat = Connection Monitoring
 
 Nslookup = DNS Query Tool
+
+## Why Networking is Important in Cybersecurity
+
+Networking is the foundation of cybersecurity because nearly every cyberattack occurs over a network.
+
+Security professionals use networking knowledge to:
+
+- Detect suspicious network traffic
+- Protect sensitive data during transmission
+- Configure firewalls and network security devices
+- Investigate cyber incidents
+- Monitor network activity
+- Prevent unauthorized access
+
+> **Remember:** You cannot defend what you do not understand.
+
+## LAN
+
+Most internal company attacks occur inside the LAN.
+
+If an attacker gains access to an office network—either physically or through an unsecured Wi-Fi connection—the may be able to target other devices on the same LAN.
+
+## MAN
+
+MANs often rely on infrastructure managed by an Internet Service Provider (ISP).
+
+If communications between locations are not encrypted, attackers may intercept sensitive information while it is in trasits
+
+## WAN
+
+WAN traffic passes through many networks and devices that organizations do not own or control.
+
+Encryption technologies such as HTTPS and VPNs help protect data from interception while it travels across the Inteternet
