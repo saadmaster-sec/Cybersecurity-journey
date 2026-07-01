@@ -118,7 +118,7 @@ New Network:
 ```
 Creates:
 
-|Subnet	Range|
+|Subnet|	Range|
 |---|---|
 |192.168.1.0/26|	1 - 62|
 |192.168.1.64/26|	65 - 126|
