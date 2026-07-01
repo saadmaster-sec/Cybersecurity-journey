@@ -285,6 +285,7 @@ Uses UDP.
 ### Cybersecurity Notes
 
 |Attack|	Layer|
+|---|---|
 |ARP Spoofing|	Layer 2|
 |DDoS|	Layer 4|
 |Phishing|	Layer 7|
