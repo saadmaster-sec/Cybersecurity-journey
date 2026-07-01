@@ -313,7 +313,7 @@ dig google.com
 |---|---|
 |Subnetting|	Network segmentation|
 |NAT|	Hides internal IP structure|
-|PA|T	Conserves public IPs|
+|PAT|	Conserves public IPs|
 |Wireshark|	Packet analysis|
 |Ettercap|	MITM testing|
 |Ping|	Connectivity verification|
