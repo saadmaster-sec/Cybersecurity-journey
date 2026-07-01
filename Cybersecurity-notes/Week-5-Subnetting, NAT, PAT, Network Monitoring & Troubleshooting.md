@@ -98,38 +98,40 @@ Where:
     * Network Address
     * Broadcast Address
 
-Example
+### Example
 
 Original Network:
-
+```text
 192.168.1.0/24
-
+```
 Need:
-
+```text
 4 Subnets
-
+```
 Borrow:
-
+```text
 2 Host Bits
-
+```
 New Network:
-
+```text
 192.168.1.0/26
-
+```
 Creates:
 
-Subnet	Range
-192.168.1.0/26	1 - 62
-192.168.1.64/26	65 - 126
-192.168.1.128/26	129 - 190
-192.168.1.192/26	193 - 254
+|Subnet	Range|
+|---|---|
+|192.168.1.0/26|	1 - 62|
+|192.168.1.64/26|	65 - 126|
+|192.168.1.128/26|	129 - 190|
+|192.168.1.192/26|	193 - 254|
 
-Network Address Translation (NAT)
-What is NAT?
+## Network Address Translation (NAT)
+
+### What is NAT?
 
 NAT (Network Address Translation) translates private IP addresses into public IP addresses before traffic is sent to the Internet.
 
-Why NAT Exists
+### Why NAT Exists
 
 Home devices use private IPs:
 
@@ -138,36 +140,42 @@ Home devices use private IPs:
 The Internet only sees:
 
 One Public IP
-NAT Process
+
+## NAT Process
+```mermaid
 flowchart LR
 A[Private Devices]
 --> B[Router NAT]
 --> C[Public Internet]
-Types of NAT
-Static NAT
+```
+
+## Types of NAT
+
+### Static NAT
 
 One private IP always maps to the same public IP.
 
-Dynamic NAT
+### Dynamic NAT
 
 Uses a pool of public IP addresses.
 
-PAT (Port Address Translation)
+### PAT (Port Address Translation)
 
 Many private IPs share one public IP using different port numbers.
 
-PAT (Port Address Translation)
+## PAT (Port Address Translation)
 
 PAT maps multiple private IP addresses to a single public IP address.
 
 Uses:
 
-Source IP
-Source Port
+* Source IP
+* Source Port
 
 to uniquely identify connections.
 
-PAT Example
+### PAT Example
+```mermaid
 flowchart LR
 
 A[Laptop]
@@ -179,139 +187,152 @@ B --> D
 C --> D
 
 D --> E[Single Public IP]
-Network Monitoring
+```
+## Network Monitoring
+
 What is Network Monitoring?
 
 The continuous observation of network performance, availability, and security.
 
 Goals:
 
-Detect failures
-Detect attacks
-Monitor traffic
-Improve performance
+* Detect failures
+* Detect attacks
+* Monitor traffic
+* Improve performance
 
-Wireshark
+## Wireshark
+
 What is Wireshark?
 
 Wireshark is a packet analysis tool used to capture and inspect network traffic.
 
 Features
-Packet Capture
-Deep Protocol Inspection
-Filtering
-Statistics
-Stream Reassembly
-Uses
-Troubleshooting
-Security Analysis
-Incident Investigation
 
-Ettercap
+* Packet Capture
+* Deep Protocol Inspection
+* Filtering
+* Statistics
+* Stream Reassembly
+
+Uses
+
+* Troubleshooting
+* Security Analysis
+* Incident Investigation
+
+## Ettercap
+
 What is Ettercap?
 
 Ettercap is a network analysis and security testing tool.
 
 Features
-Packet Sniffing
-ARP Poisoning
-Man-in-the-Middle Testing
+
+* Packet Sniffing
+* ARP Poisoning
+* Man-in-the-Middle Testing
 
 ⚠️ Commonly used in cybersecurity labs.
 
-Common Network Problems
-Problem	Possible Cause
-Connectivity Issues	Bad cable, configuration errors
-Slow Network	Congestion, interference
-IP Conflict	Duplicate IP addresses
-DNS Failure	Incorrect DNS settings
-NIC Problems	Driver or hardware failure
-Wireless Problems	Weak signal
-Firewall Issues	Blocked traffic
-VPN Issues	Incorrect VPN configuration
+### Common Network Problems
 
-Troubleshooting Tools
-Ping
+|Problem|	Possible Cause|
+|---|---|
+|Connectivity Issues|	Bad cable, configuration errors|
+|Slow Network|	Congestion, interference|
+|IP Conflict|	Duplicate IP addresses|
+|DNS Failure|	Incorrect DNS settings|
+|NIC Problems|	Driver or hardware failure|
+|Wireless Problems|	Weak signal|
+|Firewall Issues|	Blocked traffic|
+|VPN Issues|	Incorrect VPN configuration|
+
+## Troubleshooting Tools
+
+### Ping
 
 Purpose:
-
+```text
 Check if a host is reachable
-
+```
 Example:
-
+```text
 ping google.com
-Traceroute / Tracert
+```
+### Traceroute / Tracert
 
 Purpose:
-
+```text
 Show packet path to destination
-
+```
 Example:
-
+```text
 tracert google.com
-
 Windows
+```
 
+```text
 traceroute google.com
-
 Linux
+```
 
-Netstat
+### Netstat
 
 Purpose:
-
+```text
 Display network connections and ports
-
+```
 Example:
-
+```text
 netstat -an
-Nslookup
+```
+
+### Nslookup
 
 Purpose:
-
+```text
 Query DNS records
-
+```
 Example:
-
+```text
 nslookup google.com
-Dig
+```
+### Dig
 
 Linux DNS troubleshooting tool.
 
 Example:
-
+```text
 dig google.com
+```
 
-Cybersecurity Connections
-Topic	Security Relevance
-Subnetting	Network segmentation
-NAT	Hides internal IP structure
-PAT	Conserves public IPs
-Wireshark	Packet analysis
-Ettercap	MITM testing
-Ping	Connectivity verification
-Traceroute	Route investigation
-Nslookup	DNS troubleshooting
-Key Terms to Remember
+## Cybersecurity Connections
+
+|Topic|	Security Relevance|
+|---|---|
+|Subnetting|	Network segmentation|
+|NAT|	Hides internal IP structure|
+|PA|T	Conserves public IPs|
+|Wireshark|	Packet analysis|
+|Ettercap|	MITM testing|
+|Ping|	Connectivity verification|
+|Traceroute|	Route investigation|
+|Nslookup|	DNS troubleshooting|
+
+## Key Terms to Remember
+```text
 Subnet = Smaller network inside a larger network
-
 CIDR = /24, /25, /26 etc.
-
 NAT = Network Address Translation
-
 PAT = Port Address Translation
-
 Wireshark = Packet Analyzer
-
 Ettercap = Network Analysis Tool
-
 Ping = Reachability Test
-
 Traceroute = Path Discovery
-
 Netstat = Connection Monitoring
-
 Nslookup = DNS Query Tool
+```
 
 ## Why Networking is Important in Cybersecurity
 
