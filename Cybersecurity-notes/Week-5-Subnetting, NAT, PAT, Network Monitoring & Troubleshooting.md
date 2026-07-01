@@ -353,7 +353,7 @@ Security professionals use networking knowledge to:
 
 Most internal company attacks occur inside the LAN.
 
-If an attacker gains access to an office network—either physically or through an unsecured Wi-Fi connection—the may be able to target other devices on the same LAN.
+If an attacker gains access to an office network either physically or through an unsecured Wi-Fi connection the may be able to target other devices on the same LAN.
 
 ## MAN
 
