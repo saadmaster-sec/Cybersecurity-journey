@@ -70,13 +70,13 @@ Common commands:
 
 ```mermaid
 graph TD
-    Root["/ (root)"] --> Home[/home]
-    Root --> Etc[/etc]
-    Root --> Var[/var]
-    Root --> Bin[/bin]
-    Home --> User[/home/user]
-    User --> Docs[Documents]
-    User --> Downloads[Downloads]
+    Root["/ (root)"] --> Home["/home"]
+    Root --> Etc["/etc"]
+    Root --> Var["/var"]
+    Root --> Bin["/bin"]
+    Home --> User["/home/user"]
+    User --> Docs["Documents"]
+    User --> Downloads["Downloads"]
 ```
 
 **Key idea:** Linux's file system is a single hierarchical tree starting at `/` (root) — unlike Windows' drive-letter system (`C:\`, `D:\`), everything, including other drives, is mounted somewhere under `/`.
