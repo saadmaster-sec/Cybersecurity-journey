@@ -99,6 +99,90 @@ flowchart TD
 
 **Key idea:** Each layer only understands its own header — a switch reads frames, a router reads packets. This is what makes the internet's layered design flexible and interoperable.
 
+### 4.1 TCP/IP Model
+
+**TCP (Transmission Control Protocol)** is one of the core rules used in networking, and works similarly to the OSI model — just summarised into **4 layers** instead of 7:
+
+| TCP/IP Layer | Roughly Equivalent OSI Layers |
+|--------------|-------------------------------|
+| Application | Application, Presentation, Session |
+| Transport | Transport |
+| Internet | Network |
+| Network Interface | Data Link, Physical |
+
+TCP is **connection-based** — a connection must be established between client and server *before* any data is sent. This guarantees that data sent is actually received, unlike UDP.
+
+| Advantages of TCP | Disadvantages of TCP |
+|--------------------|------------------------|
+| Guarantees data integrity | Requires a reliable connection — one missing chunk means the whole chunk must be re-sent |
+| Synchronises devices to prevent data arriving out of order | A slow connection can bottleneck the other device (connection stays reserved) |
+| More reliability checks built in | Slower than UDP due to the extra overhead/processing |
+
+**Key TCP header fields:**
+
+| Header | Description |
+|--------|-------------|
+| Source Port | Random port opened by the sender (0–65535, unused) |
+| Destination Port | Fixed port the target service is running on (e.g., port 80 for a web server) |
+| Source IP | Sender's IP address |
+| Destination IP | Recipient's IP address |
+| Sequence Number | Random starting number assigned to the first piece of data sent |
+| Acknowledgement Number | Sequence number of the next expected piece of data (previous + 1) |
+| Checksum | Mathematical value used to verify data wasn't corrupted in transit |
+| Data | The actual bytes/content being transmitted |
+| Flag | Controls how the packet is handled (SYN, ACK, FIN, RST, etc.) |
+
+#### The Three-Way Handshake
+
+Before sending data, TCP establishes a connection using three steps — the **Three-Way Handshake**. Each side picks an **Initial Sequence Number (ISN)** to synchronise with, and increments it by 1 for each exchange.
+
+```mermaid
+sequenceDiagram
+    participant Client as Client (Alice)
+    participant Server as Server (Bob)
+
+    Client->>Server: SYN (ISN = 0)<br/>"Here's my sequence number to sync with"
+    Server->>Client: SYN/ACK (ISN = 5000, ACK = 1)<br/>"Here's mine, and I acknowledge yours"
+    Client->>Server: ACK (SEQ = 1, ACK = 5001)<br/>"Acknowledged, here's my data"
+    Note over Client,Server: Connection established — DATA can now flow
+```
+
+| Step | Message | Description |
+|------|---------|-------------|
+| 1 | **SYN** | Client sends its Initial Sequence Number (ISN) to synchronise |
+| 2 | **SYN/ACK** | Server sends its own ISN and acknowledges the client's ISN |
+| 3 | **ACK** | Client acknowledges the server's ISN and begins sending data (ISN + 1) |
+| — | **DATA** | Actual data is transmitted once the connection is established |
+| — | **FIN** | Cleanly closes the connection once all data has been sent |
+| — | **RST** | Abruptly terminates the connection (used when something goes wrong) |
+
+**Sequence number example:**
+
+| Device | Initial Sequence Number (ISN) | Final Sequence Number |
+|--------|-------------------------------|-------------------------|
+| Client (Sender) | 0 | 0 + 1 = 1 |
+| Client (Sender) | 1 | 1 + 1 = 2 |
+| Client (Sender) | 2 | 2 + 1 = 3 |
+
+Both devices must agree on the same sequence numbers so data can be reconstructed in the correct order on arrival.
+
+#### Closing a TCP Connection
+
+TCP closes a connection once a device confirms all data has been successfully received — since TCP reserves system resources for the duration of a connection, closing it promptly is best practice.
+
+```mermaid
+sequenceDiagram
+    participant Client as Client (Alice)
+    participant Server as Server (Bob)
+
+    Client->>Server: FIN<br/>"I'm done sending data"
+    Server->>Client: ACK<br/>"Acknowledged"
+    Server->>Client: FIN<br/>"I'm done too"
+    Client->>Server: ACK<br/>"Acknowledged, connection closed"
+```
+
+**Key idea:** The three-way handshake (SYN → SYN/ACK → ACK) is what makes TCP *reliable* — both sides confirm they're synced before data flows, and a similar handshake-style exchange (FIN → ACK → FIN → ACK) is used to close the connection cleanly.
+
 ---
 
 ## 5. Extending Your Network
