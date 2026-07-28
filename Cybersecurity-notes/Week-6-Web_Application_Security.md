@@ -1,7 +1,7 @@
 # Web Application Security — Module 1 Notes
 ### Understanding of Web Application → Architecture → Protocols → Request Methods → JWT → HTTP Status Codes
 
-> Course: Introduction to Web Application Security Testing (RnW / Captain)
+> Introduction to Web Application Security Testing
 
 ---
 
