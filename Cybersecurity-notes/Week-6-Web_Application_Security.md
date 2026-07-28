@@ -258,8 +258,3 @@ flowchart TD
 **Pentest relevance:** 500 errors triggered by malformed/malicious input (e.g., SQLi payloads, oversized inputs) often signal unhandled exceptions worth digging into further — a classic recon signal.
 
 ---
-
-## Sources / Reference
-- RnW_WEB.pdf — Course slides (Introduction to Web Application Security Testing, Captain)
-- RFC 7519 (JSON Web Token)
-- RFC 9110 (HTTP Semantics — status codes)
