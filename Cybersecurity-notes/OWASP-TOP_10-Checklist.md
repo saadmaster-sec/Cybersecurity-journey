@@ -87,6 +87,7 @@ Now covers the whole chain — not just an outdated library, but how it got ther
 - [ ] NoSQL injection: `{"$ne": null}`, `{"$gt": ""}` in JSON login bodies
 - [ ] LDAP injection on directory-auth login forms
 - [ ] XSS (reflected/stored/DOM): standard payloads in every input + URL params, check where user input is reflected unescaped; check stored fields (profile bio, comments) that render for other users
+- [ ] HTML Injection: inject raw HTML tags (`<h1>test</h1>`, `<img src=x>`, `<form action="http://evil.com">`) into every input; check if it renders unescaped even where `<script>` execution is blocked by CSP — lower severity than XSS (no code exec) but still usable for phishing overlays/defacement
 - [ ] Template injection (SSTI): `{{7*7}}`, `${7*7}` in inputs that might be templated server-side
 - [ ] XXE: file upload endpoints accepting XML, SOAP/SVG uploads
 
