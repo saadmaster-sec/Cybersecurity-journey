@@ -40,15 +40,6 @@ A VLAN is a logical method of dividing a physical Layer 2 network into separate 
 
 A single physical switch can contain multiple VLANs.
 
-Example:
-
-```text
-                 Switch
-          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”
-          â”‚        â”‚        â”‚
-       VLAN 10   VLAN 20   VLAN 30
-       Students    Staff    Servers
-```
 
 Although all devices may be connected to the same physical switch, VLANs logically separate them.
 
@@ -67,13 +58,6 @@ VLANs are used for:
 
 Each VLAN represents a separate **broadcast domain**.
 
-For example:
-
-```text
-VLAN 10 â†’ Broadcast Domain 1
-VLAN 20 â†’ Broadcast Domain 2
-VLAN 30 â†’ Broadcast Domain 3
-```
 
 A broadcast sent inside VLAN 10 normally does not cross into VLAN 20.
 
@@ -95,15 +79,6 @@ Without trunking, separate physical links could be required for different VLANs.
 
 With trunking:
 
-```text
-Switch A                         Switch B
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ VLAN 10  â”‚                     â”‚ VLAN 10  â”‚
-â”‚ VLAN 20  â”‚==== Trunk Link ====â”‚ VLAN 20  â”‚
-â”‚ VLAN 30  â”‚                     â”‚ VLAN 30  â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-```
-
 A single physical link can carry traffic from VLAN 10, VLAN 20, VLAN 30, and so on.
 
 ## Access port vs trunk port
@@ -114,23 +89,10 @@ An access port normally carries traffic for **one VLAN**.
 
 Example:
 
-```text
-PC â”€â”€â”€â”€â”€ Access Port â”€â”€â”€â”€â”€ Switch
-             VLAN 10
-```
 
 ### Trunk port
 
 A trunk port carries traffic for **multiple VLANs**.
-
-Example:
-
-```text
-Switch A â”€â”€â”€â”€â”€ Trunk â”€â”€â”€â”€â”€ Switch B
-             VLAN 10
-             VLAN 20
-             VLAN 30
-```
 
 ## Viva answer
 
@@ -147,14 +109,6 @@ Switch A â”€â”€â”€â”€â”€ Trunk â”€â”€â”€
 This is especially important on trunk links.
 
 Conceptually:
-
-```text
-Ethernet Frame
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ Header  â”‚ 802.1Q   â”‚ Payload  â”‚  FCS    â”‚
-â”‚         â”‚ VLAN Tag â”‚          â”‚         â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-```
 
 The VLAN tag allows a receiving network device to determine which VLAN the frame belongs to.
 
@@ -190,17 +144,6 @@ If devices in different VLANs need to communicate, a **Layer 3 device** must rou
 
 That process is called **Inter-VLAN Routing**.
 
-Example:
-
-```text
-VLAN 10                         VLAN 20
-PC A                            PC B
-192.168.10.10                   192.168.20.10
-     â”‚                                â”‚
-     â””â”€â”€â”€â”€â”€â”€ Switch / Layer 3 â”€â”€â”€â”€â”€â”€â”€â”˜
-                    â”‚
-                 Router
-```
 
 The router or Layer 3 switch provides a gateway for each VLAN.
 
@@ -210,15 +153,6 @@ One traditional method is called **Router-on-a-Stick**.
 
 A single physical router interface can use multiple logical subinterfaces, with each subinterface associated with a VLAN.
 
-Conceptually:
-
-```text
-VLAN 10 â”€â”
-         â”‚
-VLAN 20 â”€â”¼â”€â”€ Trunk â”€â”€ Router
-         â”‚
-VLAN 30 â”€â”˜
-```
 
 ## Layer 3 switch
 
@@ -244,13 +178,6 @@ STP is used to prevent **Layer 2 switching loops**.
 
 Suppose switches have redundant connections:
 
-```text
-        Switch A
-        /      \
-       /        \
-  Switch B â”€â”€â”€ Switch C
-```
-
 There are multiple paths between switches.
 
 Ethernet frames do not have a Layer 2 TTL equivalent that automatically stops them from circulating forever.
@@ -266,14 +193,6 @@ A loop can cause:
 
 STP identifies redundant paths and logically blocks some of them.
 
-Conceptually:
-
-```text
-        Switch A
-        /      \
-       /        \
-  Switch B â”€Xâ”€ Switch C
-```
 
 `X` represents a logically blocked redundant path.
 
@@ -298,16 +217,6 @@ STP provides:
 ## What is EtherChannel?
 
 EtherChannel combines multiple physical Ethernet links into one logical link.
-
-Example:
-
-```text
-Switch A                         Switch B
-   â•‘                                â•‘
-   â•‘â•â•â•â•â•â•â•â• Link 1 â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•‘
-   â•‘â•â•â•â•â•â•â•â• Link 2 â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•‘
-   â•‘â•â•â•â•â•â•â•â• Link 3 â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•‘
-```
 
 The group is treated logically as one connection.
 
@@ -361,13 +270,6 @@ Rules can examine things such as:
 - Source port
 - Destination port
 
-Example:
-
-```text
-ALLOW 192.168.1.0/24 â†’ Server
-DENY  10.0.0.0/8     â†’ Server
-```
-
 ## ACL processing
 
 A device evaluates traffic against ACL rules.
@@ -398,15 +300,6 @@ A firewall is a broader security control that can provide stateful inspection, a
 
 NAT translates IP addresses between private and public networks. It is commonly performed by a router or firewall at the boundary between a private network and the Internet.
 
-Example:
-
-```text
-Private Network                    Internet
-
-192.168.1.10 â”€â”
-192.168.1.11 â”€â”¼â”€â”€ Router/NAT â”€â”€â”€â†’ Public IP
-192.168.1.12 â”€â”˜
-```
 
 A private address such as `192.168.1.10` is not directly routable across the public Internet. NAT allows internal devices to communicate with external networks by translating their addresses.
 
@@ -416,9 +309,6 @@ A private address such as `192.168.1.10` is not directly routable across the pub
 
 Static NAT creates a fixed **one-to-one mapping** between a private IP and a public IP.
 
-```text
-192.168.1.10 â†” 203.0.113.10
-```
 
 Useful when an internal device needs a consistent public mapping, such as a publicly reachable server.
 
@@ -426,10 +316,6 @@ Useful when an internal device needs a consistent public mapping, such as a publ
 
 Dynamic NAT maps private IP addresses to public addresses from a configured pool.
 
-```text
-192.168.1.10 â†’ 203.0.113.10
-192.168.1.11 â†’ 203.0.113.11
-```
 
 The mapping is assigned dynamically and depends on the available public address pool.
 
@@ -441,21 +327,9 @@ PAT is commonly called **NAT Overload**.
 
 PAT allows many private devices to share a single public IPv4 address by using different port numbers to distinguish their connections.
 
-Example:
-
-```text
-192.168.1.10:5000 â”€â”
-192.168.1.11:5001 â”€â”¼â”€â”€â†’ 203.0.113.10
-192.168.1.12:5002 â”€â”˜
-```
 
 The NAT device can translate them into different public source ports:
 
-```text
-192.168.1.10:5000 â†’ 203.0.113.10:40001
-192.168.1.11:5001 â†’ 203.0.113.10:40002
-192.168.1.12:5002 â†’ 203.0.113.10:40003
-```
 
 The device keeps a translation table so that returning traffic can be mapped back to the correct internal host.
 
@@ -482,15 +356,6 @@ NAT may hide internal addressing, but **NAT itself is not a firewall**.
 
 Port forwarding is a form of destination address/port translation that allows incoming traffic from a public address and port to reach a specific private host and service.
 
-Example:
-
-```text
-203.0.113.10:8080
-        â†“
-Router/NAT
-        â†“
-192.168.1.50:80
-```
 
 ## Viva answers
 
@@ -522,28 +387,9 @@ Router/NAT
 
 Port forwarding allows traffic arriving at a router's public IP and specific port to be forwarded to a particular internal device and port.
 
-Example:
-
-```text
-Internet
-    â”‚
-Public IP: 203.0.113.10:8080
-    â”‚
-    â–¼
- Router
-    â”‚
-    â–¼
-192.168.1.50:80
-Web Server
-```
 
 The router can translate:
 
-```text
-203.0.113.10:8080
-        â†“
-192.168.1.50:80
-```
 
 ## Why is it used?
 
@@ -574,9 +420,6 @@ Therefore, port forwarding should be used carefully and combined with appropriat
 
 A forward proxy sits between **clients and external servers**.
 
-```text
-Client â†’ Forward Proxy â†’ Internet â†’ Server
-```
 
 The proxy represents the client.
 
@@ -593,11 +436,6 @@ Possible functions:
 
 A reverse proxy sits between **clients and backend servers**.
 
-```text
-Client â†’ Reverse Proxy â†’ Backend Server
-                       â†’ Backend Server
-                       â†’ Backend Server
-```
 
 The reverse proxy represents the server side.
 
@@ -626,20 +464,9 @@ Load balancing distributes incoming traffic across multiple servers or resources
 
 Without load balancing:
 
-```text
-Users
-  â”‚
-  â–¼
-Server
-```
 
 With load balancing:
 
-```text
-             â”Œâ”€â”€ Server 1
-Users â”€â”€ Loadâ”œâ”€â”€ Server 2
-             â””â”€â”€ Server 3
-```
 
 ## Why use load balancing?
 
@@ -678,14 +505,6 @@ Basic load-balancing algorithms include:
 
 QoS manages and prioritizes network traffic so important or delay-sensitive traffic receives appropriate treatment during congestion.
 
-Example:
-
-```text
-VoIP       â†’ High priority
-Video      â†’ High/medium priority
-Web        â†’ Normal priority
-Downloads  â†’ Lower priority
-```
 
 ## Why is QoS important?
 
@@ -744,13 +563,6 @@ The **Path MTU** is the largest packet size that can travel across an entire net
 
 A broadcast domain is the set of devices that can receive a Layer 2 broadcast.
 
-Example:
-
-```text
-PC A â”€â”
-PC B â”€â”¼â”€â”€ Switch
-PC C â”€â”˜
-```
 
 A broadcast sent within that network can reach the devices in the same broadcast domain.
 
@@ -811,14 +623,6 @@ It does not maintain the state of network connections.
 
 A stateful firewall keeps track of active connections.
 
-For example:
-
-```text
-Client â”€â”€ SYN â”€â”€â†’ Server
-        Firewall
-           â”‚
-      Tracks state
-```
 
 When the server responds, the firewall can determine whether the traffic belongs to an established connection.
 
@@ -846,19 +650,6 @@ NAT can hide internal addressing, but **NAT itself is not a firewall**.
 
 A default gateway is the router or Layer 3 device that a host uses to reach destinations outside its local network when no more specific route is available.
 
-Example:
-
-```text
-PC
-192.168.1.10
-     â”‚
-     â–¼
-Default Gateway
-192.168.1.1
-     â”‚
-     â–¼
-Other Networks / Internet
-```
 
 If the destination is on the same subnet, the host can communicate directly.
 
@@ -903,23 +694,6 @@ Different network, so the packet is sent to the default gateway.
 Routing is the process of determining the path that packets should take from a source network to a destination network.
 
 Routers make forwarding decisions primarily using the **destination IP address**.
-
-Example:
-
-```text
-PC
-192.168.1.10
-    â”‚
-    â–¼
-Router A
-    â”‚
-    â–¼
-Router B
-    â”‚
-    â–¼
-Server
-192.168.10.10
-```
 
 ## Routing Table
 
@@ -1037,12 +811,6 @@ The `ping` utility commonly uses:
 - ICMP Echo Request
 - ICMP Echo Reply
 
-Example:
-
-```text
-Host A â”€â”€ ICMP Echo Request â”€â”€â†’ Host B
-Host A â†â”€â”€ ICMP Echo Reply â”€â”€â”€ Host B
-```
 
 This can help determine whether a host is reachable and measure round-trip time.
 
@@ -1075,13 +843,6 @@ Traceroute/tracert uses mechanisms involving TTL/hop-limit expiration and ICMP r
 | Separates Ethernet traffic | Separates IP networks |
 
 They are commonly used together.
-
-Example:
-
-```text
-VLAN 10 â†’ 192.168.10.0/24
-VLAN 20 â†’ 192.168.20.0/24
-```
 
 ---
 
@@ -1254,46 +1015,6 @@ Routers and VLANs.
 The Layer 3 device a host uses to reach destinations outside its local network when no more specific route exists.
 
 ---
-
-# Final Revision Map
-
-A useful way to connect the concepts:
-
-```text
-                    NETWORK
-                       â”‚
-          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-          â”‚                         â”‚
-       Layer 2                   Layer 3
-          â”‚                         â”‚
-   â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”          â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”
-   â”‚             â”‚          â”‚               â”‚
- Switch        VLAN       IP Address      Routing
-   â”‚             â”‚          â”‚               â”‚
- MAC          Broadcast   Subnet         Router
- Address       Domain     Mask            Table
-   â”‚
-   â”œâ”€â”€ Trunking
-   â”œâ”€â”€ 802.1Q
-   â”œâ”€â”€ STP
-   â””â”€â”€ EtherChannel
-
-          Security / Services
-                 â”‚
-      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-      â”‚          â”‚           â”‚
-   Firewall     ACL        NAT
-      â”‚                      â”‚
-      â”‚                Port Forwarding
-      â”‚
-   Filtering
-
-       Application / Traffic Management
-                 â”‚
-      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-      â”‚          â”‚          â”‚
-   Proxy     Load Balancer  QoS
-```
 
 ## One-line memory triggers
 
