@@ -27,7 +27,7 @@ The assessment was conducted in a controlled testing environment for educational
 
 | File / Folder | Description |
 |---|---|
-| `DIVA_Report.pdf` | PDF report documenting the assessment and findings. |
+| `DIVA_VAPT_Report.pdf` | PDF report documenting the assessment and findings. |
 | `screenshots/` | Additional screenshots showing testing activities, evidence, and observations. |
 
 *More screenshots and supporting visual evidence are available in the `screenshots` folder.*
