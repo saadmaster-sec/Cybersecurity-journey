@@ -4,7 +4,7 @@ A practical notebook for learning Android application security through static an
 
 ## Contents
 
-1. [OWASP Mobile Top 10 (2024)](OWASP-Mobile-Top-10-2024.md)
+1. [OWASP Mobile Top 10 (2024)](OWASP_TOP_10_Mobile-2024.md)
 2. [Android Application Security Fundamentals](Android-Application-Security-Fundamentals.md)
 3. [APK Files and Android App Structure](APK-Files-and-App-Structure.md)
 4. [Android Lab Setup and Tools](Android-Lab-Setup-and-Tools.md)
